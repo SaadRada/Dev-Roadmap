@@ -8,7 +8,6 @@
 - React js
 ## Front Mobile :
 - React Native
-- Flutter Dart
 ## Back-end :
 - NodeJS
 - Python
