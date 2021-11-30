@@ -13,3 +13,8 @@
 - Python
 - mysql
 - MongooDB
+## Tools :
+- Git Github Gitlab
+- Docker
+- Linux
+- Learn how to use terminal and cmd
