@@ -18,10 +18,8 @@
 - [ ] MongooDB [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-XN8xmNeznvIcfL_RySLXd)
 - [ ] NodeJS with Mongodb [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_7PgWxSxwu7qrloctdyS_f)
 - [ ] NodeJS with mysql [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN8hywrEeVMkBbEH-BDyBNCF)
-- [ ] mysql
-- [ ] Python
+- [ ] Python [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs)
 ## Tools :
-- [ ] Git Github Gitlab
-- [ ] Docker
-- [ ] Linux
-- [ ] Learn how to use terminal and cmd
+- [ ] Git Github [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF)
+- [ ] Docker [Muhamed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC)
+- [ ] Learn how to use terminal and cmd [cmd](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) [Linux/Mac](https://www.youtube.com/playlist?list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c)
