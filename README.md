@@ -12,12 +12,14 @@
    - [Performance Optimization](https://www.youtube.com/playlist?list=PLejc1JbD4ZFTYdkjzqYBujf7UCVQyn_aq)
    - [Advanced](https://www.youtube.com/playlist?list=PLejc1JbD4ZFTiDCCVu_uCW0GXqyvhtbf8)
 ## Front Mobile :
-- [ ] React Native
+- [ ] React Native [Mone Xo](https://www.youtube.com/playlist?list=PLUsJIpFLVMiNV4gjX8TwrVccXFu9WWfzs)
 ## Back-end :
-- [ ] NodeJS
-- [ ] Python
+- [ ] NodeJS [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN9noGbruLWtprOPvjA4rjmC)
+- [ ] MongooDB [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-XN8xmNeznvIcfL_RySLXd)
+- [ ] NodeJS with Mongodb [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_7PgWxSxwu7qrloctdyS_f)
+- [ ] NodeJS with mysql [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN8hywrEeVMkBbEH-BDyBNCF)
 - [ ] mysql
-- [ ] MongooDB
+- [ ] Python
 ## Tools :
 - [ ] Git Github Gitlab
 - [ ] Docker
