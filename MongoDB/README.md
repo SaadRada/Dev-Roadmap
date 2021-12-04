@@ -80,7 +80,7 @@ db.colleectionName()
 db.collectionName.drop()
 ````
 
-## Documents
+# Documents
 
 MongoDb data is a <strong>JSON</strong> format data
 ![MongoDB Documents](https://docs.mongodb.com/manual/images/crud-annotated-document.bakedsvg.svg)
