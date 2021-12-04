@@ -78,3 +78,53 @@ db.colleectionName()
 ### 3-Drop collection
 ````
 db.collectionName.drop()
+````
+
+## Documents
+
+MongoDb data is a <strong>JSON</strong> format data
+![MongoDB Documents](https://docs.mongodb.com/manual/images/crud-annotated-document.bakedsvg.svg)
+
+### Data Types
+#### Char
+````
+name : "saad"
+````
+#### Integer
+````
+age : 20
+````
+#### Double
+````
+height : 1.85 
+`````
+#### Tbale
+````
+devices : 
+            [
+               {name : "macbook pro",year : 2021},
+               {name : "Redmi 9c",year : 2020}
+            ]
+````
+#### Null
+````
+home : null
+````
+#### Object
+````
+object : {
+       "Key" : "Value",
+       "Key" : "Value",
+       "Key" : "Value"
+   }
+````
+#### Undifined
+````
+price : undifined
+````
+#### Date
+````
+date : Date()
+date : new Date()
+date : new ISODate()
+````
