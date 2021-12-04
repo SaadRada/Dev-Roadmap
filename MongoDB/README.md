@@ -75,5 +75,3 @@ db.colleectionName()
 ### 3-Drop collection
 ````
 db.collectionName.drop()
-
-##
