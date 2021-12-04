@@ -1,6 +1,6 @@
 # MongoDB V5.0
 
-![The San Juan Mountains are beautiful!](https://www.lemagit.fr/visuals/LeMagIT/hero_article/MongoDB.jpg "MongoDB")
+![The San Juan Mountains are beautiful!](https://www.cloudsavvyit.com/p/uploads/2021/07/f5932bc2.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1 "MongoDB")
 
 
 ## Run mongodb
