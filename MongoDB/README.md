@@ -1,6 +1,6 @@
 # MongoDB V5.0
 
-### Run mongodb
+## Run mongodb
 
 #### mongod
 
@@ -20,7 +20,7 @@ After that put <strong>mongo</strong> ta acces to data files and databases
 mongo
 ````
 
-### Databses
+## Databses
 
 #### 1-show dbs
 
@@ -57,7 +57,7 @@ use company
 db.dropDatabase()
 ````
 
-### Collections
+## Collections
 
 in mongodb we have a collections like a tables in sql
 
