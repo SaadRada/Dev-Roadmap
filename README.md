@@ -1,5 +1,7 @@
 # 2021-2022 ROADMAP
 
+## Data Structure and Algorithms analysis
+- [ ] [TheNewBaghdad](https://www.youtube.com/playlist?list=PLF8OvnCBlEY3a1pbPrE6fvNuV3qi-6KRf)
 ## Front Web (4 Months) :
 - [x] HTML [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji)
 - [ ] CSS [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe)
