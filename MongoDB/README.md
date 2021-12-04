@@ -3,7 +3,7 @@
 ![Mongodb!](https://miro.medium.com/max/964/0*u5pCpOOf5KKx2Dr6 "MongoDB")
 
 
-## Run mongodb
+# Run mongodb
 
 #### mongod
 
@@ -23,7 +23,7 @@ After that put <strong>mongo</strong> ta acces to data files and databases
 mongo
 ````
 
-## Databses
+# Databses
 
 #### 1-show dbs
 
@@ -60,22 +60,22 @@ use company
 db.dropDatabase()
 ````
 
-## Collections
+# Collections
 
 in mongodb we have a collections like a tables in sql
 
-### 1-Show collection
+## 1-Show collection
 
 To show all collections in database we using <strong>show collections</strong> command
 ````
 show collections
 ````
 
-### 2-Create collection
+## 2-Create collection
 ````
 db.colleectionName()
 ````
-### 3-Drop collection
+## 3-Drop collection
 ````
 db.collectionName.drop()
 ````
@@ -85,7 +85,7 @@ db.collectionName.drop()
 MongoDb data is a <strong>JSON</strong> format data
 ![MongoDB Documents](https://docs.mongodb.com/manual/images/crud-annotated-document.bakedsvg.svg)
 
-### Data Types
+## Data Types
 #### Char
 ````
 name : "saad"
