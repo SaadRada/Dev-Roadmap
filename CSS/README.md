@@ -63,5 +63,52 @@ selector {
             color : crimson;
         }
         ````
+    4. General Sibling Selector (~)
+        ````
+        all brothers p after a div
+        div ~ p {
+            color : crimson;
+        }
+        ````
+5.CSS Pseudo-elements & classes
+- 1.elements
+    - after
+    - before
+    - first-line
+    - first-letter
+    - Maker
+    - selection
+        ````
+        selector::pseudo-element {
+        property: value;
+        }
+        ````
+- 2.classes
+        ![all css pseudo classes](http://ways2web.weebly.com/uploads/5/4/4/8/54485903/3112201_orig.png)
 
-
+## CSS simple styling
+- color
+````
+p {
+    color : red;
+}
+````
+- backgrounds
+  - background-color
+  - background-image
+  - background-position
+  - background-size
+  - background-repeat
+  - background-attachement
+  - background : (mix between all before values)
+````
+main {
+    background-color : red;
+    background-image : url("path/file.ext");
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachement : fixed;
+    background : url("..") color image repeat position;
+}
+````
+- borders
