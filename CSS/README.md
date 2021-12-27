@@ -88,27 +88,51 @@ selector {
 
 ## CSS simple styling
 - color
-````
-p {
-    color : red;
-}
-````
-- backgrounds
-  - background-color
-  - background-image
-  - background-position
-  - background-size
-  - background-repeat
-  - background-attachement
-  - background : (mix between all before values)
-````
-main {
-    background-color : red;
-    background-image : url("path/file.ext");
-    background-size : cover;
-    background-repeat : no-repeat;
-    background-attachement : fixed;
-    background : url("..") color image repeat position;
-}
-````
-- borders
+    ````
+    p {
+        color : red;
+    }
+    ````
+    - backgrounds
+    - background-color
+    - background-image
+    - background-position
+    - background-size
+    - background-repeat
+    - background-attachement
+    - background : (mix between all before values)
+    ````
+    main {
+        background-color : red;
+        background-image : url("path/file.ext");
+        background-size : cover;
+        background-repeat : no-repeat;
+        background-attachement : fixed;
+        background : url("..") color image repeat position;
+    }
+    ````
+- border
+    ````
+    border : type size color;
+    div {
+        border : solid 1px black;
+    }
+    ````
+- margin & padding
+  - padding : inside space
+  - margin  : outside space
+  ````
+  p {
+    padding : 10px;
+    margin  : 5px;
+  }
+  ````
+- height & width
+  ````
+  body {
+      width  : 100%;
+      height : 100vh;
+  }
+  ````
+- Box model
+![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
