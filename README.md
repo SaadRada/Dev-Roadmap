@@ -3,7 +3,7 @@
 ## Data Structure and Algorithms analysis (December)
 - [ ] [TheNewBaghdad](https://www.youtube.com/playlist?list=PLF8OvnCBlEY3a1pbPrE6fvNuV3qi-6KRf)
 ## Front Web (Junary - April) :
-- [x] HTML [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji)
+- [ ] HTML [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji)
 - [ ] CSS [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe)
 - [ ] JavaScript [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv)
 - [ ] Bootstrap [V.3](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw24EjNUp_88S1VeaNK8Cts) [V.4](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2)
