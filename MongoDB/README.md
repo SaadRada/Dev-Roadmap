@@ -10,7 +10,7 @@ The NoSQL is a type of databases, whose specificity is to be non-relational. The
 | Tables with fixed rows and columns | Document: JSON documents, Key-value|
 
 # MongoDB V5.0
-MongoDb is the most popular Database management system used for Nsql databases
+MongoDb is the most popular Database management system used for Nosql databases
 
 ![Mongodb!](https://miro.medium.com/max/964/0*u5pCpOOf5KKx2Dr6 "MongoDB")
 
@@ -29,7 +29,7 @@ mongod
 #### mongo
 
 After that we need to open a new terminal tab to work with mongodb commands.
-After that put <strong>mongo</strong> ta acces to data files and databases
+put <strong>mongo</strong> to acces to data files and databases
 
 ````
 mongo
@@ -38,11 +38,12 @@ mongo
 #### mongoimport & mongoexport
 
 The <strong>mongoimport</strong> command is used to import a MongoDB database
-The <strong>mongoexport</strong> command is used to eexport a MongoDB database
+The <strong>mongoexport</strong> command is used to export a MongoDB database
 
 ````
-mongoimport
-mongoexport
+mongoimport --db DB_NAME --collection COLLECTION_name --type=json --
+file=Name-of-file-to-import
+mongoexport --db DB_NAME -c COLLECTION_name --out fileName.json
 ````
 
 
@@ -97,7 +98,7 @@ show collections
 ## 2-Create collection
 ````
 db.createCollection("name")
-db.colleectionName().insert(data)
+db.collectionName().insert(data)
 ````
 ## 3-Drop collection
 ````
@@ -122,7 +123,7 @@ age : 20
 ````
 height : 1.85 
 `````
-#### Tbale
+#### Table
 ````
 devices : 
             [
@@ -156,7 +157,7 @@ date : new ISODate()
 ## Insert
 to insert a new value into the collection we have two ways to do that :
 - <strong>insert</strong> db.collectionName.insert({key : value ...})
-- <strong>saad</strong> db.collectionName.save()
+- <strong>save</strong> db.collectionName.save({key : value ...})
 
 The difference between them is :
 <strong>insert</strong> can only insert the data
@@ -176,7 +177,7 @@ db.collectionName.insert(
 )
 ````
 <strong>save</strong> can insert or update the data
-update if write to object id
+update if write an specific object id
 
 ````
 db.collectionName.save(
@@ -207,6 +208,7 @@ db.collectionName.update(
       name : "saad"
    }
 )
+// update only the name, the other fields will be removed
 ````
 ````
 // update documents with id 123 if exist
@@ -219,5 +221,128 @@ db.collectionName.save(
    }
 )
 ````
+- <strong>updateOne</strong> to update only the first document with id 1 .
+   ````
+   // update the first document has id 1
+   db.collection.updateOne(
+      {
+         _id : 1
+      },{
+         $set : {
+               salary : 2500
+            }
+      }
+   )
+   // update only the salary without removed the other fields
+   ````
+- multi update with <strong>update multi true</strong>
+   ````
+   // update all documents with name saad
+   db.collectionName.update(
+      {
+         name : "saad"
+      },{
+         $set : {
+            salary : 2500
+         }
+      },{
+         multi : true
+      }
+   )
+   ````
 
 
+- <strong>updateMany()</strong> to update many values
+
+   ````
+   // update all documents with name saad
+   db.collection.updateMany(
+      {
+         name : "saad"
+      },{
+         $set : {
+            salary : 2500
+         }
+      }
+   )
+   ````
+| function    | what do     |
+| ----------- | ----------- |
+| $set        | update fields value |
+| $unset      | delete fields |
+| $inc        | increment value of field => filed++ |
+| $multi      | multiply the old value by the value specifier |
+| $rename     | rename a filed |
+| $min        | update document value if greater than the minimum value and younger than the maximum value |
+
+#### Exemples :
+- remove fields with <strong>update</strong>
+   ````
+   // remove name field if salary equals to 2500
+   db.collectionName.update(
+      {
+         salary : 2500
+      },
+      {
+         $unset : {name : 1}
+      }
+   )
+   ````
+- insert with <strong>update</strong> if condition not exist
+   ````
+   db.collectionName.update(
+      {
+         name : "khadija" 
+      },{
+         $set : {
+            name : "khadija",
+            salary : 1000
+         }
+      }
+      upsert : true
+   )
+
+````
+// rename all documents fields name to prenom
+db.collection.update(
+   {},
+   {
+      $rename : {
+         name : "prenom"
+      }
+   },{
+      multi : true
+   }
+)
+````
+
+## Remove
+remove a document from the collection
+````
+// remove the document with name saad
+db.collectionName.remove(
+   {
+      name : "saad"
+   }
+)
+````
+- <strong>deleteOne()</strong> : delete the first document
+- <strong>deleteMnay()</strong> : delete many documents
+
+## Find
+The find function is used to show collection Data 
+````
+db.collectionName.find()
+db.collectionName.find().pretty()
+// pretty to show formatted data
+````
+
+find with condition
+````
+db.collectionName.find({name : "ali"}).pretty()
+````
+<strong>count</strong> to get numbers of documents with condition
+
+````
+db.collectionName.find({salary : 3000}).count()
+````
