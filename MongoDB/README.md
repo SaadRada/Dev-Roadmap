@@ -192,5 +192,32 @@ db.collectionName.save(
    }]
 )
 ````
+## Update
+
+To update a specific value we can use <strong>update</strong> OR <strong>save<strong> commands
+- <strong>update</strong> to update one or more values
+- <strong>save</strong> to update all documents data or add if the id not exist
+````
+// update documents with id 12
+db.collectionName.update(
+   {
+      _id : 12
+   },
+   {
+      name : "saad"
+   }
+)
+````
+````
+// update documents with id 123 if exist
+// if not exist this data will be insert
+db.collectionName.save(
+   {
+      _id : 123,
+      name : "hamid",
+      salary : 2300
+   }
+)
+````
 
 
