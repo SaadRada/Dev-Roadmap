@@ -194,7 +194,7 @@ db.collectionName.save(
 ````
 ## Update
 
-To update a specific value we can use <strong>update</strong> OR <strong>save<strong> commands
+To update a specific value we can use <strong>update</strong> OR <strong>save</strong> commands
 - <strong>update</strong> to update one or more values
 - <strong>save</strong> to update all documents data or add if the id not exist
 ````
