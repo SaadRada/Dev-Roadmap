@@ -1,4 +1,16 @@
+# NO SQL (Not Only SQL) :
+## introduction
+The NoSQL is a type of databases, whose specificity is to be non-relational. These systems allow the storage and analysis of Big Data. ... Thus, NoSQL is used for big data and real-time web applications
+
+## Sql VS No Sql :
+| SQL         | No Sql      |
+| ----------- | ----------- |
+| Databse     | Database    |
+| Table       | Collection  |
+| Tables with fixed rows and columns | Document: JSON documents, Key-value|
+
 # MongoDB V5.0
+MongoDb is the most popular Database management system used for Nsql databases
 
 ![Mongodb!](https://miro.medium.com/max/964/0*u5pCpOOf5KKx2Dr6 "MongoDB")
 
@@ -22,6 +34,17 @@ After that put <strong>mongo</strong> ta acces to data files and databases
 ````
 mongo
 ````
+
+#### mongoimport & mongoexport
+
+The <strong>mongoimport</strong> command is used to import a MongoDB database
+The <strong>mongoexport</strong> command is used to eexport a MongoDB database
+
+````
+mongoimport
+mongoexport
+````
+
 
 # Databses
 
@@ -73,7 +96,8 @@ show collections
 
 ## 2-Create collection
 ````
-db.colleectionName()
+db.createCollection("name")
+db.colleectionName().insert(data)
 ````
 ## 3-Drop collection
 ````
@@ -128,3 +152,45 @@ date : Date()
 date : new Date()
 date : new ISODate()
 ````
+
+## Insert
+to insert a new value into the collection we have two ways to do that :
+- <strong>insert</strong> db.collectionName.insert({key : value ...})
+- <strong>saad</strong> db.collectionName.save()
+
+The difference between them is :
+<strong>insert</strong> can only insert the data
+
+````
+db.collectionName.insert(
+   [{
+      name : "saad",
+      age : 20,
+      languages : [{"en", "fr", "ar"}]
+   }
+   {
+      name : "omar",
+      age : 27,
+      languages : [{"en", "fr", "ar"}]
+   }]
+)
+````
+<strong>save</strong> can insert or update the data
+update if write to object id
+
+````
+db.collectionName.save(
+   [{
+      name : "saad",
+      age : 20,
+      languages : [{"en", "fr", "ar"}]
+   }
+   {
+      name : "omar",
+      age : 27,
+      languages : [{"en", "fr", "ar"}]
+   }]
+)
+````
+
+

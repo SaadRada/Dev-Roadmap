@@ -93,7 +93,7 @@ selector {
         color : red;
     }
     ````
-    - backgrounds
+- backgrounds
     - background-color
     - background-image
     - background-position
@@ -136,3 +136,4 @@ selector {
   ````
 - Box model
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
+
