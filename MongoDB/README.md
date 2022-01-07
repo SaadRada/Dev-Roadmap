@@ -98,7 +98,7 @@ show collections
 ## 2-Create collection
 ````
 db.createCollection("name")
-db.collectionName().insert(data)
+db.collectionName.insert(data)
 ````
 ## 3-Drop collection
 ````
@@ -169,12 +169,12 @@ db.collectionName.insert(
    [{
       name : "saad",
       age : 20,
-      languages : [{"en", "fr", "ar"}]
-   }
+      languages : ["en", "fr", "ar"]
+   },
    {
       name : "omar",
       age : 27,
-      languages : [{"en", "fr", "ar"}]
+      languages : ["en", "fr", "ar"]
    }]
 )
 ````
@@ -186,12 +186,12 @@ db.collectionName.save(
    [{
       name : "saad",
       age : 20,
-      languages : [{"en", "fr", "ar"}]
+      languages : ["en", "fr", "ar"]
    }
    {
       name : "omar",
       age : 27,
-      languages : [{"en", "fr", "ar"}]
+      languages : ["en", "fr", "ar"]
    }]
 )
 ````
@@ -410,3 +410,23 @@ db.collectionName.find().findOne()
 | x+          | has x one or more times |
 | x*          | has x zero or more times |
 | x{2,4}      | has x 2 or 3 or 4 times |
+
+# Comparison operator
+| Operator    | what do     |
+| ----------- | ----------- |
+| $gt         | greater than |
+| $gte        | greater than or equal |
+| $lt         | less than |
+| $lte        | less than or equal |
+| $eq         | equal |
+| $ne         | not equal |
+| $in         | in table |
+| $nin        | not in table |
+
+## logical operator
+| Operator    | what do     |
+| ----------- | ----------- |
+| $and        | and && |
+| $or         | or |
+| $not        | not ! |
+| $nor        | or exclusive |
