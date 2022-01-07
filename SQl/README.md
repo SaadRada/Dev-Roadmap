@@ -150,30 +150,39 @@ SQL is a standard language for accessing and manipulating databases.
     ON condition
     ````
 - Full Join
+
     ````
     SELECT column1 , column2, ... FROM table1
     FULL OUTER JOIN table2
     ON condition
     ````
-- Having
-    Having is working with (COUNT,SUM,AVG,MIN,MAX) as a condition
+## Having
+
+Having is working with (COUNT,SUM,AVG,MIN,MAX) as a condition
+
     ````
     SELECT COUNT(id) FROM tableName
     HAVING COUNT(id) > 10
     ````
-- Exists
-    Exists is return a boolean value
+
+## Exists
+
+- Exists is return a boolean value
+
     ````
     SELECT id FROM tableName
     WHERE Exists (SELECT ....)
     ````
-- ANY & ALL 
-    Any return true if one or more value respect the condition
+## ANY & ALL
+
+- Any return true if one or more value respect the condition
+
     ````
     SELECT column1, column2, ... FROM table1
     WHERE column = ANY (SELECT ....)
     ````
-    All return true if all of the values respect the condition
+- All return true if all of the values respect the condition
+
     ````
     SELECT column1, column2, ... FROM table1
     WHERE column = ALL (SELECT ....)
