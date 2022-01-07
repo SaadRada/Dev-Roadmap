@@ -3,8 +3,8 @@
 ## Data Structure and Algorithms analysis (December)
 - [ ] [TheNewBaghdad](https://www.youtube.com/playlist?list=PLF8OvnCBlEY3a1pbPrE6fvNuV3qi-6KRf)
 ## Front Web (Junary - April) :
-- [ ] HTML [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji)
-- [ ] CSS [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe)
+- [X] HTML
+- [X] CSS
 - [ ] JavaScript [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv)
 - [ ] Bootstrap [V.3](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw24EjNUp_88S1VeaNK8Cts) [V.4](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2)
 - [ ] Tailwind [The net ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw)
@@ -17,7 +17,8 @@
 - [ ] React Native [Mone Xo](https://www.youtube.com/playlist?list=PLUsJIpFLVMiNV4gjX8TwrVccXFu9WWfzs)
 ## Back-end (June - November) :
 - [ ] NodeJS [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN9noGbruLWtprOPvjA4rjmC)
-- [ ] MongooDB [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-XN8xmNeznvIcfL_RySLXd)
+- [X] MongooDB
+- [X] SQL / MYSQL
 - [ ] NodeJS with Mongodb [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_7PgWxSxwu7qrloctdyS_f)
 - [ ] NodeJS with mysql [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN8hywrEeVMkBbEH-BDyBNCF)
 - [ ] Python [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs)
