@@ -127,8 +127,10 @@ height : 1.85
 ````
 devices : 
             [
-               {name : "macbook pro",year : 2021},
-               {name : "Redmi 9c",year : 2020}
+               {
+                  name : "macbook pro",year : 2021,
+                  name : "Redmi 9c",year : 2020
+               }
             ]
 ````
 #### Null
@@ -334,7 +336,7 @@ The find function is used to show collection Data
 ````
 db.collectionName.find()
 db.collectionName.find().pretty()
-// pretty to show formatted data
+// pretty to show data with JSON format
 ````
 
 find with condition
@@ -346,3 +348,65 @@ db.collectionName.find({name : "ali"}).pretty()
 ````
 db.collectionName.find({salary : 3000}).count()
 ````
+
+<strong> order by </strong>
+
+````
+// ascending
+db.collectionName.find().sort({salary : 1})
+// descending
+db.collectionName.find().sort({salary : -1})
+````
+
+<strong>skip</strong> to skip some documents (don't show)
+
+````
+// skip the first two documents
+db.collectionName.find().skip(2)
+````
+
+<strong>limit</strong> to limit the showing documents
+
+````
+// showing only the first 2 documents
+db.collectionName.find().limit(2)
+````
+
+<strong>findOne</strong> show only the first
+
+````
+db.collectionName.find().findOne()
+````
+
+## Find with Regex
+
+- start with
+
+   ````
+   // show document with name start by W
+   db.collectionName.find({name : /^W/})
+   ````
+
+- end with
+
+   ````
+   // show document with name end by W
+   db.collectionName.find({name : /W$/})
+   ````
+
+- start with character or another character
+   ````
+   // show document with name start by a or z
+   db.collectionName.find({name : /^[az]/})
+   ````
+- start with character between two characters
+   ````
+   // show document with name start by character between a and e
+   db.collectionName.find({name : /^[a-e]/})
+   ````
+| Symbol      | what do     |
+| ----------- | ----------- |
+| x?          | has x zero or one time |
+| x+          | has x one or more times |
+| x*          | has x zero or more times |
+| x{2,4}      | has x 2 or 3 or 4 times |
