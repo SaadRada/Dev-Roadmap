@@ -143,22 +143,22 @@ selector {
         - The block elements Take by default full width
         - Add Line Break
         - Respect padding, margin, width, height
-        
-            <div style="border:1px solid green;padding:5px;margin:5px">Block element</div><div style="border:1px solid green;padding:5px;margin:5px">Block element</div>
+
+            <div style="background:green;padding:5px;margin:5px">Block element</div><div style="background:green;padding:5px;margin:5px">Block element</div>
 
     - Inline
         - The Inline elements Take by default element width
         - Do not respect width, height
         - Respect margin, padding [ just left and right ]
 
-        <span style="border:1px solid green;display:inline;margin:5px;padding:5px">Inline element</span> <span style="border:1px solid green;display:inline;margin:5px;padding:5px">Inline element</span>
+        <span style="background:green;display:inline;margin:5px;padding:5px">Inline element</span><span style="background:green;display:inline;margin:5px;padding:5px">Inline element</span>
 
     - Inline-Block
         - The Inline elements Take by default element width
         - Respect padding, margin, width, height
         - Mix between block and inline
 
-        <span style="border:1px solid green;display:inline-block;margin:5px;padding:5px">Inline element</span> <span style="border:1px solid green;display:inline-block;margin:5px;padding:5px">Inline element</span>
+        <span style="background:green;display:inline-block;margin:5px;padding:5px">Inline element</span><span style="background:green;display:inline-block;margin:5px;padding:5px">Inline element</span>
 
     - display:none
         - Hide The element
