@@ -14,6 +14,15 @@ selector {
 ````
 ![css sytnax](https://www.w3schools.com/css/img_selector.gif)
 
+## CSS unitis
+The default font size for web page is 16px
+- px
+- em => time - element
+- rem => Root time - Root element
+- vw => ViewPort Width
+- vh => ViewPort Height
+- clac() => calculate values - calc (100% / 4)
+
 ## CSS selectors
 
 1. Nature select
@@ -169,5 +178,21 @@ selector {
 - ### Overflow
     - Hidden => hide element, data or anything outside the parent element
     - Scroll => hide element, data or anything outside the parent element and add Scrolling to see the hidden Data
-
-
+- ### Text
+    - Text-aligne : center || left || right
+    - Text-shadow : Left Top Blur Color
+    - Direction : ltr (left to right) || rtl (right to left)
+    - vertical-align : top || middle || bottom
+    - text-decoration : none || underline ...
+    - text-transform : capitalize || uppercase || lowercase ...
+    - line-height : value px
+    - letter-spacing : value px
+    - word-spacing : value px
+- ### Fonts
+    - font-family : font-name
+    - font-style : italic ....
+    -
+    - font-size : value px
+    - font-weight : bold || 100 to 900 px
+- ### Position
+    ![Css position](https://miro.medium.com/max/1400/1*eQ1bD3AL6BXU6-dszAxd1g.png)
