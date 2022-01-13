@@ -87,13 +87,13 @@ selector {
         ![all css pseudo classes](http://ways2web.weebly.com/uploads/5/4/4/8/54485903/3112201_orig.png)
 
 ## CSS simple styling
-- color
+- ### color
     ````
     p {
         color : red;
     }
     ````
-- backgrounds
+- ### backgrounds
     - background-color
     - background-image
     - background-position
@@ -111,7 +111,7 @@ selector {
         background : url("..") color image repeat position;
     }
     ````
-- border
+- ### border
     ````
     border : type size color;
     div {
@@ -127,13 +127,41 @@ selector {
     margin  : 5px;
   }
   ````
-- height & width
+- ### height & width
   ````
   body {
       width  : 100%;
       height : 100vh;
   }
   ````
-- Box model
+- ### Box model
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
+- ### Display
+    The <strong>display</strong> property specifies if/how an element is displayed.
+
+    - Block
+        - The block elements Take by default full width
+        - Add Line Break
+        - Respect padding, margin, width, height
+            <div style="border:1px solid green;padding:5px;margin:5px">Block element</div><div style="border:1px solid green;padding:5px;margin:5px">Block element</div>
+    - Inline
+        - The Inline elements Take by default element width
+        - Do not respect width, height
+        - Respect margin, padding [ just left and right ]
+        <span style="border:1px solid green;display:inline;margin:5px;padding:5px">Inline element</span> <span style="border:1px solid green;display:inline;margin:5px;padding:5px">Inline element</span>
+    - Inline-Block
+        - The Inline elements Take by default element width
+        - Respect padding, margin, width, height
+        - Mix between block and inline
+        <span style="border:1px solid green;display:inline-block;margin:5px;padding:5px">Inline element</span> <span style="border:1px solid green;display:inline-block;margin:5px;padding:5px">Inline element</span>
+    - display:none
+        - Hide The element
+        - do not take the place after hidden
+    - visibility:hidden
+        - Hide The element
+        - Still take the place after hidden
+- ### Overflow
+    - Hidden => hide element, data or anything outside the parent element
+    - Scroll => hide element, data or anything outside the parent element and add Scrolling to see the hidden Data
+
 
