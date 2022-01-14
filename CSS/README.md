@@ -146,6 +146,7 @@ The default font size for web page is 16px
 - ### Box model
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
 - ### Display
+    ![css display](https://codewebdao.com/upload/users/1/css/2019/inline-block/css-display-block-vs-inline-block.png)
     The <strong>display</strong> property specifies if/how an element is displayed.
 
     - Block
@@ -153,21 +154,15 @@ The default font size for web page is 16px
         - Add Line Break
         - Respect padding, margin, width, height
 
-            <div style="background:green;padding:5px;margin:5px">Block element</div><div style="background:green;padding:5px;margin:5px">Block element</div>
-
     - Inline
         - The Inline elements Take by default element width
         - Do not respect width, height
         - Respect margin, padding [ just left and right ]
 
-        <span style="background:green;display:inline;margin:5px;padding:5px">Inline element</span><span style="background:green;display:inline;margin:5px;padding:5px">Inline element</span>
-
     - Inline-Block
         - The Inline elements Take by default element width
         - Respect padding, margin, width, height
         - Mix between block and inline
-
-        <span style="background:green;display:inline-block;margin:5px;padding:5px">Inline element</span><span style="background:green;display:inline-block;margin:5px;padding:5px">Inline element</span>
 
     - display:none
         - Hide The element
@@ -197,6 +192,7 @@ The default font size for web page is 16px
 - ### Position
     ![Css position](https://miro.medium.com/max/1400/1*eQ1bD3AL6BXU6-dszAxd1g.png)
 - ### Box-Shadow
+    ![box shadow](https://miro.medium.com/max/2000/1*2ZUhePZinwXfe8V7DtX79A.png)
     - Box-Shadow : H-Shadow | V-Shadow | Blur | Spread | Color | Inset
         ````
         div {
