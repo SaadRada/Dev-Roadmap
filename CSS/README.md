@@ -147,7 +147,11 @@ The default font size for web page is 16px
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
 - ### Display
     ![css display](https://codewebdao.com/upload/users/1/css/2019/inline-block/css-display-block-vs-inline-block.png)
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> 576557e529675ebb8337dd99b048635cfb3aa4ee
     The <strong>display</strong> property specifies if/how an element is displayed.
 
     - Block
@@ -190,25 +194,54 @@ The default font size for web page is 16px
     -
     - font-size : value px
     - font-weight : bold || 100 to 900 px
-- ### Position
-    ![Css position](https://miro.medium.com/max/1400/1*eQ1bD3AL6BXU6-dszAxd1g.png)
-- ### Box-Shadow
-    ![box shadow](https://miro.medium.com/max/2000/1*2ZUhePZinwXfe8V7DtX79A.png)
-    - Box-Shadow : H-Shadow | V-Shadow | Blur | Spread | Color | Inset
-        ````
-        div {
-            box-shadow : 1px 3px black;
-        }
-        ````
-- ### Transition
-    - Transition : Property | Duration | Delay | Timing Fucntion
-        ````
-        div {
-            width : 400px;
-            transition : all 2s 1s easy-in-out
-        }
+## Position
+![Css position](https://miro.medium.com/max/1400/1*eQ1bD3AL6BXU6-dszAxd1g.png)
+## Box-Shadow
+![box shadow](https://miro.medium.com/max/2000/1*2ZUhePZinwXfe8V7DtX79A.png)
+- Box-Shadow : H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+    ````
+    div {
+        box-shadow : 1px 3px black;
+    }
+    ````
+## Transition
+- Transition : Property | Duration | Delay | Timing Fucntion
+    ````
+    div {
+        width : 400px;
+        transition : all 2s 1s easy-in-out
+    }
 
-        div:hover {
-            width : 500px
-        }
-        ````
+    div:hover {
+        width : 500px
+    }
+    ````
+## !important Declaration
+- The !important rule in CSS is used to add more importance to a property/value than normal.
+
+- In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+
+````
+p {
+    color : red !important;
+}
+````
+## Css Variables
+- The css variables is using to make design color changes for one place
+    ````
+    :root {
+        --mainColor : black;
+    }
+
+    p {
+        color : var(--mainColor);
+    }
+
+    div {
+        background-color : var(--mainColor);
+        --divWidth : 200px;
+    }
+    ````
+- The root is define that the variable is a global variable.
+- The divWidth variable is a local variable.
+- Now if we want to change color black for all template design, we will change only the variable value.
