@@ -196,3 +196,22 @@ The default font size for web page is 16px
     - font-weight : bold || 100 to 900 px
 - ### Position
     ![Css position](https://miro.medium.com/max/1400/1*eQ1bD3AL6BXU6-dszAxd1g.png)
+- ### Box-Shadow
+    - Box-Shadow : H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+        ````
+        div {
+            box-shadow : 1px 3px black;
+        }
+        ````
+- ### Transition
+    - Transition : Property | Duration | Delay | Timing Fucntion
+        ````
+        div {
+            width : 400px;
+            transition : all 2s 1s easy-in-out
+        }
+
+        div:hover {
+            width : 500px
+        }
+        ````
