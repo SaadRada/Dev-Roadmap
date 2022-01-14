@@ -147,6 +147,7 @@ The default font size for web page is 16px
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
 - ### Display
     ![css display](https://codewebdao.com/upload/users/1/css/2019/inline-block/css-display-block-vs-inline-block.png)
+    
     The <strong>display</strong> property specifies if/how an element is displayed.
 
     - Block
