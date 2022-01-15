@@ -245,3 +245,25 @@ p {
 - The root is define that the variable is a global variable.
 - The divWidth variable is a local variable.
 - Now if we want to change color black for all template design, we will change only the variable value.
+## Flex Box
+- Flex Direction 
+    ![flex-direction](https://dev-to-uploads.s3.amazonaws.com/i/n2ggh6yy4sbgltrx2i40.png)
+    ![flex-direction](https://dev-to-uploads.s3.amazonaws.com/i/6m9fg4n5a114q1va3b9p.png)
+    ````
+    parent-element {
+        display-flex : flex;
+        display-direction : row | row-reverse | column | column-reverse;
+        display-wrap : mo-wrap | wrap | wrap-reverse
+    }
+- Flex Wrap
+    ![flex-wrap](https://dev-to-uploads.s3.amazonaws.com/i/fux9qc05e6rtat192vlm.png)
+- Flex Flow
+    Flex Flow is a mixing Between Flex Direction And Wrap
+    ````
+    parent-element {
+        display : flex;
+        flex-flow : colum wrap;
+    }
+- Justify Content
+    ![justify content](https://dev-to-uploads.s3.amazonaws.com/i/a5lhkhbhi7hxwjgyvl5x.png)
+    ![justify content](https://dev-to-uploads.s3.amazonaws.com/i/1vyg5nf1w7plistni582.png)
