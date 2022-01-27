@@ -79,3 +79,41 @@
         >images /css /js /images /fonts
         ````
 
+## Cat and Echo
+- ### Echo
+    - The <strong>echo</strong> command writes an argument to the Terminal's standard output
+    - We can use <strong>echo</strong> command to put string in text file
+    ````
+    echo hello world > file.txt
+    => new txt file has been created with "hello world" value
+    ````
+    - the <strong>></strong> Keyword is repleace The previouse data in the file
+    - the <strong>>></strong> Keyword is append The data to The file
+    ````
+    echo "hello again" >> file.txt
+    => append "hello again" to the previouse data in file.txt
+- ### Cat
+    - The <strong>cat</strong> (short for “concatenate“) command is one of the most frequently used commands in Linux/Unix-like operating systems. cat command allows us to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files.
+    - View Content
+        ````
+        cat file.txt
+        => hello world
+        hello again
+        ````
+    - Create and Copy file(s)
+        ````
+        cat newfile.txt
+        => newfile.txt has been created
+
+        cat file.txt > newfile.txt
+        => copy file.txt data to newfile.txt
+
+        cat file.txt >> newfile.txt
+        => append file.txt data to newfile.txt
+        ````
+    - Concatenate files
+        ````
+        cat file.txt newfile.txt > lastfile.txt
+        => lastfile.txt has been created with concatenate between file.txt and newfile.txt data
+        ````
+        
