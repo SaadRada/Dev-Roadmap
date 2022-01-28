@@ -5,6 +5,8 @@
 - CMD => is the original shell for the Microsoft DOS operating system
 - PowerShell => After CMD (Has More Featers than CMD)
 - GUI => Graphical User Interface
+- PWD => Print name of current/working director
+- CD  => Change Directory
 ## Why use CMD - Terminal ?
 - Use less System Resources
 - Use Loops to Repeat Commands
