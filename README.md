@@ -25,5 +25,5 @@
 ## Tools (December) :
 - [ ] Git Github [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF)
 - [ ] Docker [Muhamed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC)
-- [ ] Learn how to use terminal and cmd [cmd](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) [Linux/Mac](https://www.youtube.com/playlist?list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c)
+- [X] Learn how to use terminal and cmd [cmd](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) [Linux/Mac](https://www.youtube.com/playlist?list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c)
 - [ ] Learn Azure Fundamentals [freeCodeCamp](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
