@@ -11,15 +11,16 @@
 - Deal With Package Manager
 - Use Git Commands
 - Increase Writing Speed
+- ...
 ## Directories
 - ### change
-    - cd => Change Directorie
+    - cd => Change Directory
         ````
         cd path
         cd Desktop
         cd Documents
         ````
-    - Return to Previous Directorie
+    - Return to Previous Directory
         ````
         cd ..
         ````
@@ -28,18 +29,18 @@
         ````
         cd \
         ````
-    - To get current Directorie
+    - To get current Directory
         ````
         pwd
         ````
 - ### create
-    - <strong>md</strong> OR <strong>mkdir</strong> (Make Directorie)
+    - <strong>md</strong> OR <strong>mkdir</strong> (Make Directory)
         ````
         mkdir public_html
         => folder public_html has been Created
 
         cd public_html
-        => change directorie to public_html folder
+        => change directory to public_html folder
         >cd/public_html
 
         mkdir css js imgs fonts
@@ -116,4 +117,109 @@
         cat file.txt newfile.txt > lastfile.txt
         => lastfile.txt has been created with concatenate between file.txt and newfile.txt data
         ````
-        
+## Grep (Global regular expression print)
+- <strong>grep</strong> is a command-line utility for searching plain-text data sets for lines that match a regular expression
+    ````
+    grep "text" file.txt
+    => search "text" in file.txt
+
+    grep "text" -r
+    => search in all directory
+
+    grep "text" -r -l
+    => get list of files has text value
+    ````
+## Tree
+- The tree is a tiny, cross-platform command-line program used to recursively list or display the content of a directory in a tree-like format
+- show folders
+    ````
+    tree /a
+    ````
+- show shema folders and files nested
+    ````
+    tree /f
+    ````
+
+## More Tricks
+- CTR + C => to stop command line process
+- Alias : is used to create soutcuts of code
+    ````
+    alias
+    pwd=cd
+    explorer=e
+    ...
+    ````
+- To create Alias
+    ````
+    alias gtp=git push
+    ````
+- Run multiple command with <strong>&&</strong>
+    ````
+    ipconfig && mkdir saad
+    ````
+- whoami : used to get current user name
+    ````
+    whoami
+    => administrator
+    ````
+- Stock command result to file
+    ````
+    ping google.com > ping_google.txt
+    ````
+- Copy command result to clipboard
+    ````
+    ipconfig | clip
+    ````
+    
+## cmdChallenge
+- ### Tail
+    - The <strong>tail</strong> command shows you data from the end of a file. Usually, new data is added to the end of a file, so the tail command is a quick and easy way to see the most recent additions to a file
+        ````
+        tail -5 newfile.txt
+        => get the last 5 line from newfile.txt
+        ````
+- ### Touch
+    - The <strong>touch</strong> command is a standard command used in UNIX/Linux operating system which is used to create, change and modify timestamps of a file. Basically, there are two different commands to create a file in the Linux system which is as follows: cat command: It is used to create the file with content.
+        ````
+        touch index.html
+        => index.html has been created
+        ````
+- ### Create nested directory in a single command
+    - To Create nested directory we can use <strong>-p</strong> keyword is stand for parent
+    - create <i>temp/files</i>
+        ````
+        mkdir -p temp/files
+        ````
+- ### Symbolic Links
+    - A <strong>symbolic link</strong> is a term for any file that contains a reference to another file or directory in the form of an absolute or relative path and that affects pathname resolution.
+    - Hard link and soft link (symbolic link)
+    ![hard link - soft link](https://miro.medium.com/max/624/1*bEu7dBB67IXWxxb_Qi8A0w.jpeg)
+
+        ````
+        ln -s [OPTIONS] FILE LINK
+        ln -s source_file symbolic_link
+        => -s stand for soft
+        ````
+    - show list of links created
+        ````
+        ls -l
+        ````
+    - Removing Symlinks
+        ````
+        unlink symlink_to_remove
+
+        rm symlink_to_remove
+        ````
+- ### Remove files
+    - remove all files in a directory
+        ````
+        rm -r *
+        ````
+    - remove files with specific extension
+        ````
+        rm **/*.css
+
+        find . -name "*.css" -type f -delete
+        ````
+
+all command docs in [ss64](https://ss64.com/)
