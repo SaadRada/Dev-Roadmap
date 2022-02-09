@@ -21,7 +21,7 @@ The default font size for web page is 16px
 - rem => Root time - Root element
 - vw => ViewPort Width
 - vh => ViewPort Height
-- clac() => calculate values - calc (100% / 4)
+- calc() => calculate values - calc (100% / 4)
 
 ## CSS selectors
 
@@ -147,11 +147,8 @@ The default font size for web page is 16px
 ![box model](https://www.lilengine.co/sites/default/files/inline-images/Screen%20Shot%202019-04-14%20at%2023.59.07.png)
 - ### Display
     ![css display](https://codewebdao.com/upload/users/1/css/2019/inline-block/css-display-block-vs-inline-block.png)
-<<<<<<< HEAD
 
-=======
     
->>>>>>> 576557e529675ebb8337dd99b048635cfb3aa4ee
     The <strong>display</strong> property specifies if/how an element is displayed.
 
     - Block
@@ -267,3 +264,62 @@ p {
 - Justify Content
     ![justify content](https://dev-to-uploads.s3.amazonaws.com/i/a5lhkhbhi7hxwjgyvl5x.png)
     ![justify content](https://dev-to-uploads.s3.amazonaws.com/i/1vyg5nf1w7plistni582.png)
+- Align items
+    ![align items](https://dev-to-uploads.s3.amazonaws.com/i/kt25wxicd7vm8ddtmq0l.png)
+- Align Content
+    ![align Content](https://dev-to-uploads.s3.amazonaws.com/i/nqvvc2rhf0vx3czy0rnr.png)
+    ![align Content](https://dev-to-uploads.s3.amazonaws.com/i/zeet3705rsmz77v66x3c.png)
+- Flex grow, shrink and Order
+    - grow
+        ![flex grow](https://miro.medium.com/max/1838/1*43faUXdI5KbcSb_LbXO-Ng.png)
+    - shrink
+        ![flex shrink](https://samanthaming.gumlet.io/flexbox30/23-flex-shrink.jpg.gz)
+    - order
+        ![flex order](https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2015/02/order-illustration.png)
+- Flex basis
+    - flex basis work as a width in row direction
+    and as a height in a column direction : 
+        ![flex basis](https://i.stack.imgur.com/cBN2s.png)
+
+## Filter
+    - The filter property is used to add some filters to images
+    - blur() : Add Blur to image
+    - grayscale() : change image mode to grayscale
+    - brightness() : Adjusts the brightness of the image.
+    - ...
+## Grid
+![Grid](https://miro.medium.com/max/2000/1*m2Q3kRG9yl5WyNIyoe15XA.png)
+
+- ### unitis :
+    - px
+    - %
+    - auto
+    - Fraction
+    - Repeat()
+    - Mix Between All
+- ### grid-template-columns :
+    - The grid template columns is specific how much layouts are in the column
+        ```
+        .container {
+            display : grid;
+            grid-template-columns : 1fr 1fr 1fr;
+        }
+        ```
+- ### grid-template-rows & Gap :
+    - The grid template rows is specific how much layouts are in the row
+        ```
+        .container {
+            display : grid;
+            grid-template-rows : 1fr 2fr 1fr;
+        }
+        ```
+    - Gap is specific the space bitween The grid elements
+        ```
+        .container {
+            display : grid;
+            grid-template-columns : repeat(3, 1fr);
+            gap : 10px 20px;
+        }
+        ```
+- ### Align-content & justify-content :
+    - The Same as The Flex Box
