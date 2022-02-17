@@ -21,6 +21,10 @@ $mainColor : red;
 $containerWidth : 100%;
 $font : 'Tahome', sans-serif;
 $fontSize : 18px;
+---- usage ----
+div {
+  color : $mainColor;
+}
 ````
 ## Nesting : 
 Sass lets you nest CSS selectors in the same way as HTML.
@@ -37,9 +41,12 @@ nav {
   a {
     text-decoration : none; 
   }
+  &:hover {
+    background-color : red; // = nav:hover
+  }
 }
 ````
-
+& is stand for parent element
 ## Sass @import :
 - Sass keeps the CSS code DRY (Don't Repeat Yourself). One way to write DRY code is to keep related code in separate files.
 
@@ -51,3 +58,62 @@ Example : file _global.scss
 @import 'global';
 @use 'global';
 ````
+## Extend : 
+The <strong>@extend</strong> is using to not repeat css static values
+Example : 
+````
+.container {
+  width : 100%;
+  background-color : #345EA6;
+  text-align-center;
+}
+````
+We can extend the container css values to another element
+````
+.home {
+  @extend .container;
+  display : grid;
+  .....
+}
+````
+## Placeholder
+The placeholder is the same way to use extend 
+but the extended element is note a class
+is a placeholder element (faracha)
+
+Example :
+````
+%allPagesStyle {
+  width : 100%;
+  padding : 20px;
+  margin : 10px 0;
+}
+````
+use it in another element :
+````
+.services {
+  @extend %allPagesStyle;
+  display : flex;
+  ...
+}
+````
+
+## Control Flow - If And Else :
+````
+.box {
+  @if ($theme == 'light'){
+    background-color : white;
+    color : black;
+  }
+  @else {
+    background-color : black;
+    color : white;
+  }
+}
+````
+we can also use if else in one property
+````
+.box {
+  width : 100%;
+  background-color : if($theme == 'dark', black, white);
+}
