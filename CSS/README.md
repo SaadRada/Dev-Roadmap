@@ -323,3 +323,74 @@ p {
         ```
 - ### Align-content & justify-content :
     - The Same as The Flex Box
+
+## 2D Transform :
+
+- Scale : 
+    - transform : scaleX(1.5), scaleY(1.5), scale(1.5)
+- Rotate :
+    - transform : rotate(45deg), rotate(-45deg)
+- Translate : 
+    - transform : translateX(10px), translateY(15px), translate(10px, 15px)
+- Skew : 
+    - skewX(45deg), skewY(45deg), skew(45deg)
+
+## Animations :
+- create animation : 
+    ````
+    @keyframe changeColor {
+        from {
+            color : red;
+        }
+        to {
+            color : black;
+        }
+        ------------------- OR -------------------
+        0% {
+            ...
+        }
+        100% {
+            ...
+        }
+    }
+    ````
+- use or call this animation : 
+    ````
+    p {
+        animation-name : changeColor;
+        animation-duration : 5s;
+        OR
+        animation : chamgeColor 5s;
+    }
+    ````
+
+## Media Query :
+- Media query is a CSS technique introduced in CSS3.
+- It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+    ````
+    @media condition {
+        css code
+    }
+    Example
+    @media (max-width : 1000px){
+        .container {
+            width : 100%;
+        }
+    }
+    ````
+- we can also use the media as a attribute in html
+    ````
+    <link rel="stylesheet" href="path.css" media="(max-width : 1000px)">
+    ````
+- Media standard BreakPoints : 
+    - 320px — 480px: Mobile devices.
+    - 481px — 768px: iPads, Tablets.
+    - 769px — 1024px: Small screens, laptops.
+    - 1025px — 1200px: Desktops, large screens.
+    - 1201px and more — Extra large screens, TV.
+
+## Global Values :
+- initial : reset the default value of element.
+- inhert : inhert style from parent element.
+- unset : inhert If  able to inhert, and initial if not.
+- revert : reset the default value from user agent (Browser).
