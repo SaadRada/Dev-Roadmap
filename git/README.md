@@ -71,3 +71,32 @@ folder to local repo
 - 2- Create repo on github
 - 3- git remote add origin linktorepo.git
 - 4- git push -u origin master
+## Branch
+  - get the curent Branch :
+    ````
+    git branch // return main or master
+    ````
+  - Create new Branch
+    ````
+    git branch branchName
+    ````
+  - Change Branch
+    ````
+    git checkout branchName
+    ````
+  - Remove Branch
+    ````
+    git branch -d branchName // Safe Delete
+    git branch -D branchName // Forced Delete
+    ````
+  - Rename Branch Name
+    ````
+    git branch -m newBranchName
+    ````
+  - Merg and push
+    ````
+    git checkout main // go to main branch
+    git merg newBranchName // merg main with new branch
+    git push origin main // push main to origin repo branch
+    ````
+    Note : if we push directly the new branch to origin repo it will be push as a pull request
