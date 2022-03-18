@@ -67,7 +67,7 @@ folder to local repo
   git init
   ````
 ## Create Repository From Existing Project
-1- git init
-2- Create repo on github
-3- git remote add origin linktorepo.git
-4- git push -u origin master
+- 1- git init
+- 2- Create repo on github
+- 3- git remote add origin linktorepo.git
+- 4- git push -u origin master
