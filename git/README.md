@@ -99,4 +99,36 @@ folder to local repo
     git merg newBranchName // merg main with new branch
     git push origin main // push main to origin repo branch
     ````
-    Note : if we push directly the new branch to origin repo it will be push as a pull request
+    <strong>Note</strong> : if we push directly the new branch to origin repo it will be push as a pull request
+## Stash
+the git Stash is like a virtual box or cloud space can save any files u want, and you can reset them for any time
+Example :
+- Create two files
+  ````
+  touch index.html style.css 
+  ````
+- check etat
+  ````
+  git status 
+  // return will need to commit two files
+  ````
+- Add the files
+  ````
+  git add * // add this two files
+  ````
+- check status
+  ````
+  git status 
+  // return that we need to push this two files
+  ````
+  but i don't want to push them, i need to save them and push another files for example
+- Move to the stash
+  ````
+  git stash 
+  // saved on stash andd we can't find them now in the local repo
+  `````
+- reset from stash to local repo
+  ````
+  git stash pop
+  // move files from stash to local repo
+  ````
