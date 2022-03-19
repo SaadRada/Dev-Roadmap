@@ -132,3 +132,37 @@ Example :
   git stash pop
   // move files from stash to local repo
   ````
+  - git stash => move added files to the stash with default name
+  - git stash save "text" => move added files to the stash with text name
+  - git stash pop => move the last stash to the local repo
+  - git stash apply => copy last stash from stash to local repo
+  - git stash @{number of stash} => move specific stash
+  - git stash drop => delete the last stash
+  - git stash drop stash@{number} => delete specific stash
+  - git stash show => show the content of last stash
+  - git stash show stash@{number} show the .... of specific stash
+  - git stash clear => clear and delete all stashs
+## Restore and Clean
+The restore command is used to restore files from stage
+````
+git restore -stage fileName or *
+````
+Clean is used to delete files
+````
+git clean -n
+// return list of files will be deleted
+git clean -f
+// confirm the delete after see the files
+````
+## Reset the head
+The head in the branch is the last commit.
+so if we want to return to old version or delete a commit, we need to change the head.
+for example :
+- commit 1 : hash : 1234 HEAD
+- commit 2 : hash : 4367
+- commit 3 : hash : 8910
+return to the commit 2 (delete the last commit) = (change the head)
+````
+git reset --hard hashOfCommit
+git reset --hard 4367
+````
