@@ -167,3 +167,15 @@ git reset --hard hashOfCommit
 git reset --hard 4367
 git push --force
 ````
+## ignoring files and directories
+Some times we need to not push some files 
+like .log files or some directories like nodu_module directory.
+to doing that we need to creat .gitignore file
+and add names of files or derictories on this file
+<strong>.gitignore file :</strong>
+`````
+*.log // ignore all .log files
+!vip.log // not ignore this file
+ds_store // ignore ds_store
+node_module // ignore directory
+````
