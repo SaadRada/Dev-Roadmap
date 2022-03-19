@@ -165,4 +165,5 @@ return to the commit 2 (delete the last commit) = (change the head)
 ````
 git reset --hard hashOfCommit
 git reset --hard 4367
+git push --force
 ````
