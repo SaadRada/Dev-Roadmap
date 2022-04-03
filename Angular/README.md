@@ -41,6 +41,7 @@ ng serve --open // open the project
 <div style="display:flex">
 
 ![Structure](https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png)
+
 <div>
 
 - <strong>e2e</strong> : Contain Files For Testing
