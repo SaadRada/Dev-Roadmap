@@ -38,7 +38,8 @@ cd projectName // go to project
 ng serve --open // open the project
 ```
 ## Angular Project Structure
-<img src="https://camo.githubusercontent.com/ec556857dc74243cf84e12fa140fdc104c6b77de395bd1a00314457dc5cdb89d/68747470733a2f2f7777772e6e67646576656c6f702e746563682f77702d636f6e74656e742f75706c6f6164732f323031372f31322f466f6c6465722d5374727563747572652e706e67" alt="Structure" data-canonical-src="https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png" style="max-width: 50%; float:left;margin-right:5px">
+
+<img src="https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png" style="max-width: 50%; float:left;margin-right:5px">
 
 - <strong>e2e</strong> : Contain Files For Testing
 - <strong>Node_modules</strong> : Contain necessary Files To Angular Work
