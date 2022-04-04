@@ -39,11 +39,11 @@ ng serve --open // open the project
 ```
 ## Angular Project Structure
 <div style="display:flex">
-<div>
+<span>
 
 ![Structure](https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png)
-</div>
-<div>
+</span>
+<span>
 
 - <strong>e2e</strong> : Contain Files For Testing
 - <strong>Node_modules</strong> : Contain necessary Files To Angular Work
@@ -51,5 +51,5 @@ ng serve --open // open the project
 - <strong>package.json</strong> : Contain All Project Dependencies
 - <strong>angular.json</strong> : CLI configuration defaults for all projects in the workspace, including configuration options for build, serve, and test tools that the CLI uses,
 - <strong>tslint.json</strong> : 
-</div>
+</span>
 </div>
