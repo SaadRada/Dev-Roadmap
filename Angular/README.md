@@ -43,7 +43,19 @@ ng serve --open // open the project
 
 - <strong>e2e</strong> : Contain Files For Testing
 - <strong>Node_modules</strong> : Contain necessary Files To Angular Work
-- <strong>src</strong> : Contain source files
 - <strong>package.json</strong> : Contain All Project Dependencies
 - <strong>angular.json</strong> : CLI configuration defaults for all projects in the workspace, including configuration options for build, serve, and test tools that the CLI uses,
-- <strong>tslint.json</strong> : 
+- <strong>tslint.json</strong> : TSlint check Typescript code for readability, maintainability, and functionality errors.
+- (:warning: TSLint has been deprecated as of 2019)
+- <strong> tsconfig.json </strong> : contain Typescript configuration
+- <strong>src</strong> : Contain source files
+  - <strong> assets </strong> : Contains image and other asset files to be copied as-is when you build your application
+  - <strong> index.html </strong> : The Main page visible to the user that contain the compomemts
+  - <strong> styles.css </strong> : The global css file Vissible to all components
+  - <strong> app </strong> : Contains the component files in which your application logic and data are defined. has 6 files
+   - <strong> app.module.ts </strong> : Defines the root module, named AppModule, that tells Angular how to assemble the application. Initially declares only the AppComponent. As you add more components to the app, they must be declared here.
+   - <strong> app.component.ts </strong> : ?
+   - <strong> app.component.spec.ts </strong> : Defines a unit test for the root AppComponent.
+   - <strong> app.component.html </strong> : Defines the HTML template associated with the root AppComponent.
+   - <strong> app.component.css </strong> : Defines the base CSS stylesheet for the root AppComponent.
+   - <strong> app-routing.module.ts </strong> : The composant routing file
