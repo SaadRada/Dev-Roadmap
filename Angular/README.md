@@ -39,7 +39,11 @@ ng serve --open // open the project
 ```
 ## Angular Project Structure
 <div style="display:flex">
+<<<<<<< HEAD
 <span style="display:flex">
+=======
+<span style="display:flex">
+>>>>>>> 9b92f1e36f14d980bdbc9d52aa886b2e01e8d7d8
 
 ![Structure](https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png)
 </span>
