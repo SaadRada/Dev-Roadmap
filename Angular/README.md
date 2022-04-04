@@ -39,7 +39,7 @@ ng serve --open // open the project
 ```
 ## Angular Project Structure
 <div style="display:flex">
-<span>
+<span width='50vw'>
 
 ![Structure](https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png)
 </span>
