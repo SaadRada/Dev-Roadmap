@@ -39,7 +39,7 @@ ng serve --open // open the project
 ```
 ## Angular Project Structure
 
-<img src="https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png" style="max-width: 50%; float:left;margin-right:5px">
+<img src="https://www.ngdevelop.tech/wp-content/uploads/2017/12/Folder-Structure.png" align="left">
 
 - <strong>e2e</strong> : Contain Files For Testing
 - <strong>Node_modules</strong> : Contain necessary Files To Angular Work
