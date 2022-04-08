@@ -6,7 +6,7 @@
 - [X] HTML
 - [X] CSS
 - [ ] JavaScript [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv)
-- [ ] Bootstrap [V.3](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw24EjNUp_88S1VeaNK8Cts) [V.4](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2)
+- [X] Bootstrap V.5
 - [ ] Tailwind [The net ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw)
 - [ ] React js 
    - [React Hooks](https://www.youtube.com/playlist?list=PLejc1JbD4ZFSaQIFNstRIrbm_fqb12Q59) 
@@ -23,7 +23,7 @@
 - [ ] NodeJS with mysql [Muhammed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN8hywrEeVMkBbEH-BDyBNCF)
 - [ ] Python [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs)
 ## Tools :
-- [ ] Git Github [ElZero](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF)
+- [X] Git Github
 - [ ] Docker [Muhamed Essa](https://www.youtube.com/playlist?list=PLMYF6NkLrdN-vRESJh6XOEaLudHS8chDC)
 - [X] Learn how to use terminal and cmd [cmd](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT) [Linux/Mac](https://www.youtube.com/playlist?list=PL-osiE80TeTvGhHkpvfmKWOiIPF8UVy6c)
 - [ ] Learn Azure Fundamentals [freeCodeCamp](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
