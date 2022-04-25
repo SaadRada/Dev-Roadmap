@@ -40,3 +40,9 @@
   - Autorization (Token)
   - User-Agent (OS, Browser infos ...)
   - Referrer
+
+## Http Status Codes :
+
+- #### 1XX : Informational
+  Reauest received / processing
+- ###
