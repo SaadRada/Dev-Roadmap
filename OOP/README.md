@@ -52,4 +52,5 @@ The basic entities in object-oriented programming are classes and objects.
     personne ahmed = new personne();
     ahmedd.name = "ahmed";
     ````
-
+  - ### Protected
+  
