@@ -17,3 +17,26 @@
 - POST : Submit Data to The Server
 - PUT : Update Data Alredy in The Server
 - DELETE : Deletes Data From The Server
+
+## Http Header Field :
+![Http Header](https://cdn.tutsplus.com/cdn-cgi/image/width=590/net/uploads/legacy/511_http/request_header.png)
+- ### Generale :
+  - Request URL
+  - Request Method (GET, POST ...)
+  - Status Code
+  - Remote Adress (IP)
+  - Refer Policy (Historie of previous pagesand more)
+- ### Response : 
+  - Server (Apache, Nginx ...)
+  - Set-Cookie
+  - Content Type (html : text/html, css : text/css, image : image/png ...)
+  - Content Length
+  - Date
+- ### Request : 
+  - Cookies
+  - Accept-xxx
+  - Content Type
+  - Content Length
+  - Autorization (Token)
+  - User-Agent (OS, Browser infos ...)
+  - Referrer
