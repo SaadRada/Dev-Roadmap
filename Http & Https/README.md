@@ -42,8 +42,6 @@
   - Referrer
 
 ## Http Status Codes :
-<div style="float:left;width:50%">
-
 - #### 1XX : Informational
   Reauest received / processing
 - #### 2XX : Success
@@ -54,5 +52,4 @@
   Request does not have what it needs
 - #### 5XX : Server Error
   Server failed to fulfil an apparent valid request
-</div>
-<img src="https://www.infidigit.com/wp-content/uploads/2019/12/20191227_012601_0000.png" style="width:50%;height:auto;float:right">
+<img src="https://www.infidigit.com/wp-content/uploads/2019/12/20191227_012601_0000.png">
