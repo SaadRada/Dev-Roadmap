@@ -22,7 +22,7 @@
 - Css for styling
 - TypeScript For Data Banding and Calculation Api ...
 - Browser Can't understand TypeScript For that TypeScript is compile to be a javaScript code
-## Install a Project
+## Install
 - Download Node js Last Version (npm)
 - Download Angular CLI(Command Line Interface)
 - Cli use for testing and compilation
@@ -31,6 +31,12 @@
   npm install -g @angular/cli@version
   ng version // check angular cli version
   ```
+## Update After install
+````
+npm uninstall -g @angular-cli
+npm cache verify
+npm install -g @angular/cli@latest
+````
 ## Create a project
 ```
 ng new projectName // Create new project
