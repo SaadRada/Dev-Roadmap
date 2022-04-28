@@ -8,3 +8,23 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - Create backEnd applications with nodejs express js ...
 - Create Mobile applications (React Native, ionic...)
 - Create desktop applications (electron js)
+
+# What we will Learn?
+- Introduction
+- Data Types And Variables
+- Numbers And Strings
+- Control Flow
+- Arrays
+- Loop
+- Functions & Scope
+- Higher Order Functions And Practice
+- Objects
+- Document Object Model [DOM]
+- Browser Object Model [BOM]
+- Destructuring
+- More Methods And New Data Types
+- Regular Expressions
+- Object Oriented Programming
+- Date, Time, Generators And Modules
+- JSON
+- Asynchronous JavaScript Programming
