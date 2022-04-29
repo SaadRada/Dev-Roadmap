@@ -92,3 +92,15 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   var name with special caracteres not working
   ````
 - ## Var vs Let Vs Const
+![jjs scopr](https://cdn.hashnode.com/res/hashnode/image/upload/v1600864549731/CPpg9u2gi.png)
+  - var
+    - Redeclare - yes
+    - Access Before Decalre - Undifined
+    - Variable Scope Drama - Added to window
+  - let
+    - Redeclare - No
+    - Access Before Decalre - Error
+  - cont
+    - is a constant value that can't change
+    - Redeclare - No
+    - Access Before Decalre - Error
