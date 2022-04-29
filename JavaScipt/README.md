@@ -123,3 +123,20 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   consol.log('saad \n rada') => saad
   rada
   ```
+- ## Concatinate and Template Literals
+
+  ```
+  var name = "saad";
+  var lastName = "rada";
+
+  alert(a +" "+ b);
+  ```
+
+  with backtick
+
+  ```
+  var name = "saad";
+  var lastName = "rada";
+
+  alert(`${a} ${b}`);
+  ```
