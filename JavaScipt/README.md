@@ -113,3 +113,13 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     - is a constant value that can't change
     - Redeclare - No
     - Access Before Decalre - Error
+- ## Escape Operator
+  ```
+  consol.log("saad 'rada'") => saad 'rada'
+  consol.log('saad "rada"') => saad "rada"
+  consol.log("saad "rada"") => ERROR
+  consol.log('saad 'rada'') => ERROR
+  consol.log('saad \'rada\'') => saad 'rada'
+  consol.log('saad \n rada') => saad
+  rada
+  ```
