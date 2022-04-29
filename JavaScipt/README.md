@@ -81,3 +81,14 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     - Boolean : true false
     - undifined
     - null
+- ## Variables 
+  in the first javascript is a loosely typed language
+  - In programming we call a language loosely typed when you don't have to explicitly specify types of variables and objects. A strongly typed language on the contrary wants types specified.
+
+  ````
+  var name = value;
+  var 1name // not working
+  var _name // workinng
+  var name with special caracteres not working
+  ````
+- ## Var vs Let Vs Const
