@@ -72,3 +72,12 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   - ECMAScript is a JavaScript standard meant to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International according to the document ECMA-262
 
   - ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is underway now.
+- ## Data Type
+  to get the data type of a variable we can use <strong>typeof()</strong> 
+    - String : "saad" OR 'saad'
+    - Number : 10 OR 10.1
+    - Array => object : [1, 2, 3, 4]
+    - Object : {name: "saad", age: 20, contry: "morocco"}
+    - Boolean : true false
+    - undifined
+    - null
