@@ -140,3 +140,5 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
   alert(`${a} ${b}`);
   ```
+
+# Numbers
