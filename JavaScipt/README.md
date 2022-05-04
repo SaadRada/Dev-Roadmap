@@ -182,3 +182,31 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     Number.isNan("saad") // true
     Number.isNan(12) // false
     ```
+
+- Math Object :
+  - Math.round() :
+    ```
+    Math.round(2.3) // 2
+    Math.round(2.7) // 3
+    ```
+  - Math.ceil() :
+    ```
+    Math.ceil(12.1) // 13
+    ```
+  - Math.floor() :
+    ```
+    Math.floor(11.9) // 11
+    ```
+  - Math.min() & Math.max() :
+    ```
+    Math.min(1, 10, -2, 3, 0) // -2
+    Math.max(20, 101, -5, 33) // 101
+    ```
+  - Math.random() :
+    ```
+    Math.random() // return random number between 0 and 1
+    ```
+  - Math.trunc() :
+    ```
+    Math.trunc(99.5) // 99 return the integer value
+    ```
