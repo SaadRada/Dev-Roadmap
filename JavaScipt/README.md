@@ -144,10 +144,41 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 # Numbers
 
 - Methods :
+
   - toString() : convert number to string
+
+    ```
+    (100).toString() // "100"
+    100..toString() // "100"
+    ```
+
   - Number() : convert string to number, return NAN if not a number
-  - toFixed(n) : 12.99999.toFixed(2) : return 12.99 as a string
+
+    ```
+    Number("100") // 100
+    ```
+
+  - toFixed(n) : 12.44444.toFixed(2) : return 12.44 as a string
+    ```
+    12.444444.toFixed(2) // 12.44
+    ```
   - parseInt() : convert string to number (int)
+    ```
+    parseInt("320.2") // 320
+    parseInt("100 saad") // 100
+    ```
   - parseFloat() : convert string to number (float)
+    ```
+    parseFloat("320.5") // 320.5
+    parseInt("100.2 saad") // 100.2
+    ```
   - Number.isInteger() : return true if integer
+    ```
+    Number.isInteger(2) // true
+    Number.isInteger(2.3) // false
+    ```
   - Number.isNan() : return true if not a number
+    ```
+    Number.isNan("saad") // true
+    Number.isNan(12) // false
+    ```
