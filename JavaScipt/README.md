@@ -242,3 +242,32 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     let name = "SaaD";
     console.log(name.toLowerCase()); // saad
     ```
+  - indexOf()
+    ```
+    let text = "Hello everyone im saad from morocco";
+    console.log(text.indexOf("o")); // the first o - position 4
+    ```
+  - lastIndexOf()
+    ```
+    let text = "Hello everyone im saad from morocco";
+    console.log(text.lastIndexOf("o")); // the last o - position 34
+    ```
+  - slice()
+    ```
+    let text = "lorem text value";
+    console.log(text.slice(3)); // em text value
+    console.log(text.slice(3, 8)); // em te
+    console.log(text.slice(-4)); // value
+    ```
+  - repeat()
+    ```
+    let name = "saad";
+    console.log(name.repeat(3)); // saadsaadsaad
+    ```
+  - split()
+    ```
+    let fullName = "Saad Rada";
+    console.log(fullName.split()); // ["Saad Rada"]
+    console.log(fullName.split(" ")); // ["Saad", "Rada"]
+    console.log(fullName.split("")); // ["S", "a", "a", "d", "R", "a", "d", "a"]
+    ```
