@@ -210,3 +210,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     ```
     Math.trunc(99.5) // 99 return the integer value
     ```
+
+# Strings
+
+- Methods :
