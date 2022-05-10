@@ -12,9 +12,12 @@
 - php (php 8 For laravel 9)
 - xampp, mamp or wamp
 - composer
+- php extensions
 
 # Create Project
 
 ```
 composer create-project laravel/laravel projectName
+// with spesific version :
+composer create-project laravel/laravel="8.*.*" projectName
 ```
