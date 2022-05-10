@@ -69,9 +69,9 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   document.write(1);
   ```
 - ## Console Methods And WebAPI
-  log : console-log(1)
-  error : console.error("error");
-  table : console.table(["saad", "rada", 20])
+  - log : console-log(1)
+  - error : console.error("error");
+  - table : console.table(["saad", "rada", 20])
 - ## What Is ECMAScript ?
 
   - ECMAScript is a JavaScript standard meant to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International according to the document ECMA-262
