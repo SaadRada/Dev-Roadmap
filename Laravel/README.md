@@ -47,3 +47,90 @@ composer create-project laravel/laravel="8.*.*" projectName
 
   Route::get("/ticket", [TicketController::class, 'show']);
   ```
+
+# FST Steps
+
+- Create databse in php myadmin
+
+- Edit databse name in .env file
+
+- Routing Controller : in "routes/web.php"
+
+  ```
+  Route::get('/url', [controllerName::class, 'method']);
+  Route::get('Url','PageName');
+  ```
+
+- Create Controller
+
+  ```
+  php artisan make:controller CarController -r // with resources
+  ```
+
+- nameSpace => right click to import name class name space
+
+- Create view in "resources/views/Cars/index.blade.php"
+
+- Return the view in the controller index method
+
+  ```
+  public function index()
+  {
+  return view("cars/index");
+  }
+  ```
+
+- Create migration
+
+  ```
+  php artisan make:migration create_cars_table
+  ```
+
+- Execute the migartion
+
+  ```
+  php artisan migrate
+  ```
+
+- Create Model
+
+  ```
+  php artisan make:model Car
+  ```
+
+- Crate Factory
+
+  ```
+  php artisan make:factory CarFactory
+  ```
+
+- Generate Fake Data
+
+  ```
+  php artisan tinker
+  >> App\Models\Car::factory(100)->create();
+  ```
+
+- add new column to the migration
+
+  ```
+  php artisan make:migration add_brand_to_cars
+  ```
+
+- Create model, factory, controller and migration
+
+  ```
+  php artisan make:model Driver -a
+  ```
+
+- Route List
+
+  ```
+  php artisan route:list
+  ```
+
+- Create Route With ALl methods (create, show, update, destroy, edit)
+
+  ```
+  Route::resource('/drivers', DriverController::class);
+  ```
