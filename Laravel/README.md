@@ -52,6 +52,26 @@ composer create-project laravel/laravel="8.*.*" projectName
 
 MVC (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software's business logic and display. This "separation of concerns" provides for a better division of labor and improved maintenance.
 
+- Model: Manages data and business logic.
+- View: Handles layout and display.
+- Controller: Routes commands to the model and view parts.
+
+# Create a Model
+
+```
+php artisan make:model Name
+```
+
+# Create a Controller
+
+```
+php artisan make:controller Name
+```
+
+# Create a View
+
+- View is created manualy in the view folder
+
 # FST Steps
 
 - Create databse in php myadmin
