@@ -68,6 +68,16 @@ php artisan make:model Name
 php artisan make:controller Name
 ```
 
+# Seeder
+
+seeder a tool to include dummy data to the database automatically
+
+- in the factory : \App\Models\User::factory(10)->create();
+- in the terminal :
+  ```
+  php artisan db:seed
+  ```
+
 # Create a View
 
 - View is created manualy in the view folder
