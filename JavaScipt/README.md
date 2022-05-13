@@ -214,6 +214,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 # Strings
 
 - Methods :
+
   - length
     ```
     let name = "ahmad";
@@ -271,3 +272,5 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     console.log(fullName.split(" ")); // ["Saad", "Rada"]
     console.log(fullName.split("")); // ["S", "a", "a", "d", "R", "a", "d", "a"]
     ```
+
+  # Control Flow
