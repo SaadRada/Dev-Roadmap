@@ -174,3 +174,15 @@ seeder a tool to include dummy data to the database automatically
   ```
   php artisan make:model Product -m
   ```
+
+- Create Controller for API
+
+  ```
+  php artisan make:controller API/ProductController -r --api
+  ```
+
+- Create Controller related with the model
+
+  ```
+  php artisan make:controller API/ProductController -r --api -m Product
+  ```
