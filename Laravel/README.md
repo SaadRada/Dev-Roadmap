@@ -168,3 +168,9 @@ seeder a tool to include dummy data to the database automatically
   ```
   Route::resource('/drivers', DriverController::class);
   ```
+
+- Create model with migration
+
+  ```
+  php artisan make:model Product -m
+  ```
