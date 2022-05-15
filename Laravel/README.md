@@ -186,3 +186,5 @@ seeder a tool to include dummy data to the database automatically
   ```
   php artisan make:controller API/ProductController -r --api -m Product
   ```
+
+# Web service
