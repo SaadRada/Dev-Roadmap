@@ -40,6 +40,17 @@ composer create-project laravel/laravel="8.*.*" projectName
   Route::view("/contact", "contact", [data])
   ```
 
+- return view inside a folder company/Contact
+
+  ```
+  use Illuminate\Support\Facades\Route;
+
+  Route::get("/contact", function(){
+    return view("company.contact", [data]);
+  })
+
+  ```
+
 - return method from controller
 
   ```
