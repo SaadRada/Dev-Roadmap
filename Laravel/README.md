@@ -204,3 +204,5 @@ seeder a tool to include dummy data to the database automatically
   ```
 
 # Web service
+
+# Components
