@@ -205,4 +205,6 @@ seeder a tool to include dummy data to the database automatically
 
 # Web service
 
-# Components
+## Routing
+
+- The routings for api is make in api.php file
