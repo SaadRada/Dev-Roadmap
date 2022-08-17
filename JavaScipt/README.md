@@ -376,7 +376,9 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
     - ### Array Methods
 
-      - #### unshift : add in the first
+      #### Add And Remove Fron Array
+
+      - ##### unshift : add in the first
 
         ```
         let array = [1, 2, 3];
@@ -385,7 +387,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
         // [5, 1, 2, 3]
         ```
 
-      - #### push : add in the last
+      - ##### push : add in the last
 
         ```
         let array = [1, 2, 3];
@@ -394,7 +396,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
         // [1, 2, 3, 4]
         ```
 
-      - #### shift : remove the first case
+      - ##### shift : remove the first case
 
         ```
         let array = [1, 2, 3];
@@ -403,11 +405,33 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
         // [2, 3]
         ```
 
-      - #### pop : remove the last case
+      - ##### pop : remove the last case
 
         ```
         let array = [1, 2, 3];
 
         array.pop();
         // [1, 2]
+        ```
+
+      #### Array Searching
+
+      - ##### indexOf and lastIndexOf (Return index)
+
+        ```
+        let names = ["Saad", "Moncef", "Abderahem", "Zoubair", "Saad"]
+
+        console.log(names.indexOf("Saad")); // 0
+        console.log(names.indexOf("Abderahem")); // 2
+        console.log(names.lastIndexOf("Saad")); // 4
+        console.log(names.indexOf("Amine")); // -1 Not Found
+        ```
+
+      - ##### includes (Return Boolean Value)
+
+        ```
+          let names = ["Saad", "Moncef", "Abderahem", "Zoubair"]
+
+          console.log(names.includes("Saad")); // true
+          console.log(names.indexOf("amine")); // false
         ```
