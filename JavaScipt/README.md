@@ -14,12 +14,12 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
 # What we will Learn?
 
-- Introduction
-- Data Types And Variables
-- Numbers And Strings
-- Control Flow
-- Arrays
-- Loop
+- [x] Introduction
+- [x] Data Types And Variables
+- [x] Numbers And Strings
+- [x] Control Flow
+- [x] Arrays
+- [x] Loop
 - Functions & Scope
 - Higher Order Functions And Practice
 - Objects
@@ -336,7 +336,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     }
     ```
 
-  - # Arrays
+# Arrays
 
     - Create an array
 
@@ -509,3 +509,50 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       os.join("|") // mac os|linux|windows
 
       ```
+
+# Loops
+
+- ### For loop
+
+  ```
+  for (start, end, increment) {
+    // do something
+  }
+
+  for (let i = 0; i<10; i++) {
+    consol.log(i); // 1 2 3 .... 9
+  }
+  ```
+
+- ### Break, Continue, Label
+
+  - Break : End the loop
+  - Continue : Skip the curent index from loop
+  - label : break specific loop
+
+    ```
+    mainLoop : for(let i = 0; i<10; i++){
+      if(condition){
+        continue; // skip
+      }
+      nestedLoop for(let j=0; j<5; j++){
+        if(condition) {
+          break; // break this loop
+          break mainLoop; // break specific loop
+        }
+      }
+    }
+    ```
+
+- ### While loop
+  ```
+  while (true) {
+    // do this
+  }
+  ```
+- ### Do While Loop
+  ```
+  do {
+    // this
+  }while(true)
+  ```
