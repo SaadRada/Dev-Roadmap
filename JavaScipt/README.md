@@ -274,3 +274,64 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     ```
 
   # Control Flow
+
+  - #### Comparison Operators
+    - == : Compare Value Only
+    - === : Compare Value and Data Type
+    - != : Not equales values
+    - !== : Not equales Value and data type
+    - > : greater than
+    - > = : greater than or equale
+    - < : less than
+    - <= : less than or equale
+  - #### Logical Operators
+    - && : and
+    - || : or
+    - ! : not
+  - #### if condition
+
+    ```
+    if(condition){
+      do something
+    }
+    else {
+      do something else
+    }
+    ```
+
+  - #### Ternary Operator
+    ```
+    condition ? do something : do something else
+    condition ? do something : another condition ? do another something : do something else
+    ```
+  - #### Nullish Coalescing Operator And Logical Or
+
+    It is used to replace Null , Undifined and 0 with other values
+
+    || : replace Null, Undifined and 0
+    ?? : replace Null and Undifined
+
+    ```
+    let price
+
+    console.log(`the price is ${price || 100}`); // price is undifined the outpout will be => the price is 100
+
+    let user = null
+
+    console.log(`Welcome ${user || "UNKNOWN user"}`);
+    ```
+
+  - #### Switch Statement
+
+    ```
+    let day = 1;
+
+    switch(day) {
+      case 0 : console.log("sunday"); break:
+      case 1 : console.log("monday"); break;
+      // multiple case
+      case 2 :
+      case 3 : console.log("multiple case")
+      default : console.log("Unknown");
+    }
+    ```
