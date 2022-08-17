@@ -458,16 +458,42 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
       #### Slice and Splice
 
+      The slice() method returns selected elements in an array, as a new array.
+
+      The slice() method selects from a given start, up to a (not inclusive) given end.
+
+      The slice() method does not change the original array.
+
+      ```
+      let n = [1, 2, 3, 4]
+
+      n.slice(1) // [2, 3, 4]
+      n.slice(1, 4) // [2, 3]
+      ```
+
+      The splice() method adds and/or removes array elements.
+
+      The splice() method overwrites the original array.
+
+      ```
+      let arr = [10, 5, 3]
+
+      arr.splice(in position, remove, add)
+      arr.splice(2, 0, 1,2) // [10, 5, 1, 2, 3]
+      ```
+
       #### Concat and Join
 
       The concat() method creates a new array by merging (concatenating) existing arrays:
 
       ```
+
       let os = ["mac os", "linux", "windows"];
       let pc = ["MacBook Air", "Hp EliteBook", "Asus ROG"];
 
       let all = os.concat(pc); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG"]
       let allWithNew = os.concat(pc, "Dell", ["Android", "IOS"]); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG", "Dell", "Android", "IOS"]
+
       ```
 
       The join() method also joins all array elements into a string.
@@ -475,9 +501,15 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       It behaves just like toString(), but in addition you can specify the separator:
 
       ```
+
       let os = ["mac os", "linux", "windows"];
 
       os.join() // mac os, linux, windows
       os.join("") // mac oslinuxwindows
       os.join("|") // mac os|linux|windows
+
+      ```
+
+      ```
+
       ```
