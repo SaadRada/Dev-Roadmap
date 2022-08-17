@@ -335,3 +335,34 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       default : console.log("Unknown");
     }
     ```
+
+  - # Arrays
+
+    - Create an array
+
+    ```
+    let pc = ["Macbook pro m1", "Asus ROG", "Hp EliteBook"];
+    ```
+
+    - Access Arrays ELements
+      ```
+      console.log(pc[0]); // Macbook pro m1
+      ```
+    - Nested Arrays
+
+      ```
+      console.log(pc[0][0]); // M
+      ```
+
+    - Change Arrays Elements
+
+      ```
+      pc[0] = "Macbook pro 2019";
+      console.log(pc);
+      // Macbook pro 2019, Asus ROG, Hp EliteBook
+      ```
+
+    - Check is Array
+      ```
+      Array.isArray(pc) // true
+      ```
