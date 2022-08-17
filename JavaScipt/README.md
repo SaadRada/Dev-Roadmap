@@ -438,7 +438,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
       #### Array Basic Sorting
 
-      - ##### sort and reverse
+      - ##### Sort and R everse
 
         alphabetically sorting from 0 1 ... to a b c...
 
@@ -448,7 +448,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
         console.log(arr.sort()); // [-10, 0, 100, 500, 90, "saad"]
         ```
 
-                ```
+        ```
 
         let arr = [90, -10, 0, "saad", 500, "100"];
 
@@ -456,4 +456,28 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
         ```
 
-        ```
+      #### Slice and Splice
+
+      #### Concat and Join
+
+      The concat() method creates a new array by merging (concatenating) existing arrays:
+
+      ```
+      let os = ["mac os", "linux", "windows"];
+      let pc = ["MacBook Air", "Hp EliteBook", "Asus ROG"];
+
+      let all = os.concat(pc); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG"]
+      let allWithNew = os.concat(pc, "Dell", ["Android", "IOS"]); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG", "Dell", "Android", "IOS"]
+      ```
+
+      The join() method also joins all array elements into a string.
+
+      It behaves just like toString(), but in addition you can specify the separator:
+
+      ```
+      let os = ["mac os", "linux", "windows"];
+
+      os.join() // mac os, linux, windows
+      os.join("") // mac oslinuxwindows
+      os.join("|") // mac os|linux|windows
+      ```
