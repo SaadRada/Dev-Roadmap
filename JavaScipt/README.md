@@ -340,9 +340,9 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
     - Create an array
 
-    ```
-    let pc = ["Macbook pro m1", "Asus ROG", "Hp EliteBook"];
-    ```
+      ```
+      let pc = ["Macbook pro m1", "Asus ROG", "Hp EliteBook"];
+      ```
 
     - Access Arrays ELements
       ```
@@ -363,6 +363,51 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       ```
 
     - Check is Array
+
       ```
       Array.isArray(pc) // true
       ```
+
+    - Array length
+
+      ```
+      console.log(pc.length) // 3
+      ```
+
+    - ### Array Methods
+
+      - #### unshift : add in the first
+
+        ```
+        let array = [1, 2, 3];
+
+        array.unshift(5);
+        // [5, 1, 2, 3]
+        ```
+
+      - #### push : add in the last
+
+        ```
+        let array = [1, 2, 3];
+
+        array.push(4);
+        // [1, 2, 3, 4]
+        ```
+
+      - #### shift : remove the first case
+
+        ```
+        let array = [1, 2, 3];
+
+        array.shift();
+        // [2, 3]
+        ```
+
+      - #### pop : remove the last case
+
+        ```
+        let array = [1, 2, 3];
+
+        array.pop();
+        // [1, 2]
+        ```
