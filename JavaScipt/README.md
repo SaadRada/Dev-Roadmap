@@ -509,7 +509,3 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       os.join("|") // mac os|linux|windows
 
       ```
-
-      ```
-
-      ```
