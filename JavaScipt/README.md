@@ -435,3 +435,25 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
           console.log(names.includes("Saad")); // true
           console.log(names.indexOf("amine")); // false
         ```
+
+      #### Array Basic Sorting
+
+      - ##### sort and reverse
+
+        alphabetically sorting from 0 1 ... to a b c...
+
+        ```
+        let arr = [90, -10, 0, "saad", 500, "100"];
+
+        console.log(arr.sort()); // [-10, 0, 100, 500, 90, "saad"]
+        ```
+
+                ```
+
+        let arr = [90, -10, 0, "saad", 500, "100"];
+
+        console.log(arr.reverse()); // ["100", 500, "saad", 0, -10, 90]
+
+        ```
+
+        ```
