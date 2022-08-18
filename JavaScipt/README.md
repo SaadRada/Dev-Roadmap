@@ -562,14 +562,52 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - A function is simply a “chunk” of code that you can use over and over again, rather than writing it out multiple times
 - Built in Functions : is a function that is already available in a programming language
 - User Defined Functions : is a function that is created by the programmer
-- Syntax :
+- Basic Function :
 
   ```
-  function name(par1, par2, ...) {
+  function name() {
     do something
     return something;
   }
 
   // call function
-  name(par1, par2, ...)
+  name()
+  ```
+
+- Function with parameters :
+
+  ```
+  function calc(num1, num2) {
+    return num1 + num2;
+  }
+
+  calc(10,20); // 30
+  ```
+
+- Function parametrs default value :
+
+  ```
+  function sayHello(name = "Unknow") {
+    return `Hello ${name}`;
+  }
+
+  sayHello("saad"); // Hello saad
+  sayHello(); // Hello Unknown
+  ```
+
+- Function Rest parametrs
+
+  ```
+  function calc(...numbers) {
+    let result = 0;
+
+    for(let i=0; i<numbers.length; i++) {
+      result += numbers[i];
+    }
+
+    return result;
+  }
+
+  calc(10, 20, 30); // 60
+  calc(5, 10, 40, 20, 10) // 85
   ```
