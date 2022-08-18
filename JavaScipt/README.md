@@ -345,9 +345,11 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
       ```
 
     - Access Arrays ELements
+
       ```
       console.log(pc[0]); // Macbook pro m1
       ```
+
     - Nested Arrays
 
       ```
