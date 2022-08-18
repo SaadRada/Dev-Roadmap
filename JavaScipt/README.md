@@ -338,179 +338,179 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
 # Arrays
 
-    - Create an array
+- Create an array
 
-      ```
-      let pc = ["Macbook pro m1", "Asus ROG", "Hp EliteBook"];
-      ```
+  ```
+  let pc = ["Macbook pro m1", "Asus ROG", "Hp EliteBook"];
+  ```
 
-    - Access Arrays ELements
+- Access Arrays ELements
 
-      ```
-      console.log(pc[0]); // Macbook pro m1
-      ```
+  ```
+  console.log(pc[0]); // Macbook pro m1
+  ```
 
-    - Nested Arrays
+- Nested Arrays
 
-      ```
-      console.log(pc[0][0]); // M
-      ```
+  ```
+  console.log(pc[0][0]); // M
+  ```
 
-    - Change Arrays Elements
+- Change Arrays Elements
 
-      ```
-      pc[0] = "Macbook pro 2019";
-      console.log(pc);
-      // Macbook pro 2019, Asus ROG, Hp EliteBook
-      ```
+  ```
+  pc[0] = "Macbook pro 2019";
+  console.log(pc);
+  // Macbook pro 2019, Asus ROG, Hp EliteBook
+  ```
 
-    - Check is Array
+- Check is Array
 
-      ```
-      Array.isArray(pc) // true
-      ```
+  ```
+  Array.isArray(pc) // true
+  ```
 
-    - Array length
+- Array length
 
-      ```
-      console.log(pc.length) // 3
-      ```
+  ```
+  console.log(pc.length) // 3
+  ```
 
-    - ### Array Methods
+- ### Array Methods
 
-      #### Add And Remove Fron Array
+  #### Add And Remove Fron Array
 
-      - ##### unshift : add in the first
+  - ##### unshift : add in the first
 
-        ```
-        let array = [1, 2, 3];
+    ```
+    let array = [1, 2, 3];
 
-        array.unshift(5);
-        // [5, 1, 2, 3]
-        ```
+    array.unshift(5);
+    // [5, 1, 2, 3]
+    ```
 
-      - ##### push : add in the last
+  - ##### push : add in the last
 
-        ```
-        let array = [1, 2, 3];
+    ```
+    let array = [1, 2, 3];
 
-        array.push(4);
-        // [1, 2, 3, 4]
-        ```
+    array.push(4);
+    // [1, 2, 3, 4]
+    ```
 
-      - ##### shift : remove the first case
+  - ##### shift : remove the first case
 
-        ```
-        let array = [1, 2, 3];
+    ```
+    let array = [1, 2, 3];
 
-        array.shift();
-        // [2, 3]
-        ```
+    array.shift();
+    // [2, 3]
+    ```
 
-      - ##### pop : remove the last case
+  - ##### pop : remove the last case
 
-        ```
-        let array = [1, 2, 3];
+    ```
+    let array = [1, 2, 3];
 
-        array.pop();
-        // [1, 2]
-        ```
+    array.pop();
+    // [1, 2]
+    ```
 
-      #### Array Searching
+  #### Array Searching
 
-      - ##### indexOf and lastIndexOf (Return index)
+  - ##### indexOf and lastIndexOf (Return index)
 
-        ```
-        let names = ["Saad", "Moncef", "Abderahem", "Zoubair", "Saad"]
+    ```
+    let names = ["Saad", "Moncef", "Abderahem", "Zoubair", "Saad"]
 
-        console.log(names.indexOf("Saad")); // 0
-        console.log(names.indexOf("Abderahem")); // 2
-        console.log(names.lastIndexOf("Saad")); // 4
-        console.log(names.indexOf("Amine")); // -1 Not Found
-        ```
+    console.log(names.indexOf("Saad")); // 0
+    console.log(names.indexOf("Abderahem")); // 2
+    console.log(names.lastIndexOf("Saad")); // 4
+    console.log(names.indexOf("Amine")); // -1 Not Found
+    ```
 
-      - ##### includes (Return Boolean Value)
+  - ##### includes (Return Boolean Value)
 
-        ```
-          let names = ["Saad", "Moncef", "Abderahem", "Zoubair"]
+    ```
+      let names = ["Saad", "Moncef", "Abderahem", "Zoubair"]
 
-          console.log(names.includes("Saad")); // true
-          console.log(names.indexOf("amine")); // false
-        ```
+      console.log(names.includes("Saad")); // true
+      console.log(names.indexOf("amine")); // false
+    ```
 
-      #### Array Basic Sorting
+  #### Array Basic Sorting
 
-      - ##### Sort and R everse
+  - ##### Sort and R everse
 
-        alphabetically sorting from 0 1 ... to a b c...
+    alphabetically sorting from 0 1 ... to a b c...
 
-        ```
-        let arr = [90, -10, 0, "saad", 500, "100"];
+    ```
+    let arr = [90, -10, 0, "saad", 500, "100"];
 
-        console.log(arr.sort()); // [-10, 0, 100, 500, 90, "saad"]
-        ```
+    console.log(arr.sort()); // [-10, 0, 100, 500, 90, "saad"]
+    ```
 
-        ```
+    ```
 
-        let arr = [90, -10, 0, "saad", 500, "100"];
+    let arr = [90, -10, 0, "saad", 500, "100"];
 
-        console.log(arr.reverse()); // ["100", 500, "saad", 0, -10, 90]
+    console.log(arr.reverse()); // ["100", 500, "saad", 0, -10, 90]
 
-        ```
+    ```
 
-      #### Slice and Splice
+  #### Slice and Splice
 
-      The slice() method returns selected elements in an array, as a new array.
+  The slice() method returns selected elements in an array, as a new array.
 
-      The slice() method selects from a given start, up to a (not inclusive) given end.
+  The slice() method selects from a given start, up to a (not inclusive) given end.
 
-      The slice() method does not change the original array.
+  The slice() method does not change the original array.
 
-      ```
-      let n = [1, 2, 3, 4]
+  ```
+  let n = [1, 2, 3, 4]
 
-      n.slice(1) // [2, 3, 4]
-      n.slice(1, 4) // [2, 3]
-      ```
+  n.slice(1) // [2, 3, 4]
+  n.slice(1, 4) // [2, 3]
+  ```
 
-      The splice() method adds and/or removes array elements.
+  The splice() method adds and/or removes array elements.
 
-      The splice() method overwrites the original array.
+  The splice() method overwrites the original array.
 
-      ```
-      let arr = [10, 5, 3]
+  ```
+  let arr = [10, 5, 3]
 
-      arr.splice(in position, remove, add)
-      arr.splice(2, 0, 1,2) // [10, 5, 1, 2, 3]
-      ```
+  arr.splice(in position, remove, add)
+  arr.splice(2, 0, 1,2) // [10, 5, 1, 2, 3]
+  ```
 
-      #### Concat and Join
+  #### Concat and Join
 
-      The concat() method creates a new array by merging (concatenating) existing arrays:
+  The concat() method creates a new array by merging (concatenating) existing arrays:
 
-      ```
+  ```
 
-      let os = ["mac os", "linux", "windows"];
-      let pc = ["MacBook Air", "Hp EliteBook", "Asus ROG"];
+  let os = ["mac os", "linux", "windows"];
+  let pc = ["MacBook Air", "Hp EliteBook", "Asus ROG"];
 
-      let all = os.concat(pc); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG"]
-      let allWithNew = os.concat(pc, "Dell", ["Android", "IOS"]); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG", "Dell", "Android", "IOS"]
+  let all = os.concat(pc); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG"]
+  let allWithNew = os.concat(pc, "Dell", ["Android", "IOS"]); // ["mac os", "linux", "windows", "MacBook Air", "Hp EliteBook", "Asus ROG", "Dell", "Android", "IOS"]
 
-      ```
+  ```
 
-      The join() method also joins all array elements into a string.
+  The join() method also joins all array elements into a string.
 
-      It behaves just like toString(), but in addition you can specify the separator:
+  It behaves just like toString(), but in addition you can specify the separator:
 
-      ```
+  ```
 
-      let os = ["mac os", "linux", "windows"];
+  let os = ["mac os", "linux", "windows"];
 
-      os.join() // mac os, linux, windows
-      os.join("") // mac oslinuxwindows
-      os.join("|") // mac os|linux|windows
+  os.join() // mac os, linux, windows
+  os.join("") // mac oslinuxwindows
+  os.join("|") // mac os|linux|windows
 
-      ```
+  ```
 
 # Loops
 
