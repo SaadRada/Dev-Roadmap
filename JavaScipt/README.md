@@ -655,3 +655,12 @@ Hugher Order Function is a function that accepts Functions as a parametrs
     this // 10
   }, 10);
   ```
+
+- ### Filter
+
+  ```
+  let friends = ["Saad", "Ahmed", "Said", "Amine"];
+
+  // if the return is true, return the curent element
+  let filtredFriends = friends.filter((el) => el.startWith("A")) // Ahmed, Amine
+  ```
