@@ -645,22 +645,36 @@ Hugher Order Function is a function that accepts Functions as a parametrs
 
 - ### Map
 
-  ```
-  let array = [1, 2, 3, 4, 5, 6];
+  - map() creates a new array from calling a function for every array element.
 
-  let addition = array.map(element, index, arr) {
-    element // 1
-    index // 0
-    arr // [1, 2, 3, 4, 5, 6]
-    this // 10
-  }, 10);
-  ```
+  - map() calls a function once for each element in an array.
+
+  - map() does not execute the function for empty elements.
+
+  - map() does not change the original array.
+
+    ```
+    let array = [1, 2, 3, 4, 5, 6];
+
+    let addition = array.map(element, index, arr) {
+      element // 1
+      index // 0
+      arr // [1, 2, 3, 4, 5, 6]
+      this // 10
+    }, 10);
+    ```
 
 - ### Filter
 
-  ```
-  let friends = ["Saad", "Ahmed", "Said", "Amine"];
+  - The filter() method creates a new array filled with elements that pass a test provided by a function.
 
-  // if the return is true, return the curent element
-  let filtredFriends = friends.filter((el) => el.startWith("A")) // Ahmed, Amine
-  ```
+  - The filter() method does not execute the function for empty elements.
+
+  - The filter() method does not change the original array.
+
+    ```
+    let friends = ["Saad", "Ahmed", "Said", "Amine"];
+
+    // if the return is true, return the curent element
+    let filtredFriends = friends.filter((el) => el.startWith("A")) // Ahmed, Amine
+    ```
