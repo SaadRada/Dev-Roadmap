@@ -640,3 +640,18 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   ```
 
 # Higher Order Functions
+
+Hugher Order Function is a function that accepts Functions as a parametrs
+
+- ### Map
+
+  ```
+  let array = [1, 2, 3, 4, 5, 6];
+
+  let addition = array.map(element, index, arr) {
+    element // 1
+    index // 0
+    arr // [1, 2, 3, 4, 5, 6]
+    this // 10
+  }, 10);
+  ```
