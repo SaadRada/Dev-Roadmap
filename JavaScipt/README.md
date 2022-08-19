@@ -613,3 +613,30 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   calc(10, 20, 30); // 60
   calc(5, 10, 40, 20, 10) // 85
   ```
+
+- Anonymous Function
+
+  ```
+  calc(1, 2) // Undifined Function
+
+  let calc = function (num1, num2) {
+    return num1 + num2;
+  }
+
+  calc(1, 2) // return 3
+  ```
+
+- Arrow Function
+
+  ```
+  let calc = function (num1, num2) {
+    return num1 + num2
+  }
+
+  let calc = (num1, num2) => num1 + num2;
+
+  // if the function has 1 parametre
+  let sayHello = name => `Hello ${name}`;
+  ```
+
+# Higher Order Functions
