@@ -20,7 +20,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - [x] Control Flow
 - [x] Arrays
 - [x] Loop
-- Functions & Scope
+- [x] Functions & Scope
 - Higher Order Functions And Practice
 - Objects
 - Document Object Model [DOM]
@@ -678,3 +678,51 @@ Hugher Order Function is a function that accepts Functions as a parametrs
     // if the return is true, return the curent element
     let filtredFriends = friends.filter((el) => el.startWith("A")) // Ahmed, Amine
     ```
+
+- Reduce
+
+  - The reduce() method executes a reducer function for array element.
+
+  - The reduce() method returns a single value: the function's accumulated result.
+
+  - The reduce() method does not execute the function for empty array elements.
+
+  - The reduce() method does not change the original array
+
+  - Syntax
+
+    ```
+    array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+    ```
+
+    - total : The initialValue, or the previously returned value of the function.
+    - currentValue : The value of the current element.
+    - currentIndex : The index of the current element.
+    - arr : The array the current element belongs to.
+    - initialValue : A value to be passed to the function as the initial value.
+
+    - With initial value
+
+      ```
+      let array = [1, 2, 3];
+
+      array.reduce((t, v, i, a) => {
+        t // 10
+        v // 1
+        i // 0
+        a // [1, 2, 3]
+      }, 10)
+      ```
+
+    - Without initial value
+
+      ```
+      let array = [1, 2, 3];
+
+      array.reduce((t, v, i, a) => {
+        t // 1
+        v // 2
+        i // 1
+        a // [1, 2, 3]
+      })
+      ```
