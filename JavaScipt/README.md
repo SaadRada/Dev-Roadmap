@@ -752,25 +752,33 @@ Higher Order Function is a function that accepts Functions as a parametrs
 - In JavaScript The Object is a data type
 - The objects has properties and methods
 
-  ```
-  let car = {
-    // Properties
-    name: "Dacia",
-    color: "red",
-    price: 850,
+- ### Creation
 
-    go: function() {
-      // do something
+  - Simple Creation
+
+    ```
+    let car = {
+      // Properties
+      name: "Dacia",
+      color: "red",
+      price: 850,
+
+      // Method
+      go: function() {
+        // do something
+      }
     }
-  }
+    ```
 
-  // Acces
-  car.name // Dacia
-  car.color // red
-  car.go() // do something
-  ```
+  - New Keyword
 
-- ### Dot Notation vs Bracket Notation
+    ```
+    let user = new Object({
+      ...
+    })
+    ```
+
+- ### Acces With Dot Notation and Bracket Notation
 
   ```
   let myVar = "country";
