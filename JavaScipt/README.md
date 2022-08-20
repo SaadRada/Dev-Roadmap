@@ -85,7 +85,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   - Array => object : [1, 2, 3, 4]
   - Object : {name: "saad", age: 20, contry: "morocco"}
   - Boolean : true false
-  - undifined
+  - undefined
   - null
 - ## Variables
 
@@ -104,7 +104,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
   ![jjs scopr](https://cdn.hashnode.com/res/hashnode/image/upload/v1600864549731/CPpg9u2gi.png)
   - var
     - Redeclare - yes
-    - Access Before Decalre - Undifined
+    - Access Before Decalre - Undefined
     - Variable Scope Drama - Added to window
   - let
     - Redeclare - No
@@ -306,15 +306,15 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     ```
   - #### Nullish Coalescing Operator And Logical Or
 
-    It is used to replace Null , Undifined and 0 with other values
+    It is used to replace Null , Undefined and 0 with other values
 
-    || : replace Null, Undifined and 0
-    ?? : replace Null and Undifined
+    || : replace Null, Undefined and 0
+    ?? : replace Null and Undefined
 
     ```
     let price
 
-    console.log(`the price is ${price || 100}`); // price is undifined the outpout will be => the price is 100
+    console.log(`the price is ${price || 100}`); // price is undefined the outpout will be => the price is 100
 
     let user = null
 
@@ -617,7 +617,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - Anonymous Function
 
   ```
-  calc(1, 2) // Undifined Function
+  calc(1, 2) // Undefined Function
 
   let calc = function (num1, num2) {
     return num1 + num2;
@@ -641,7 +641,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
 # Higher Order Functions
 
-Hugher Order Function is a function that accepts Functions as a parametrs
+Higher Order Function is a function that accepts Functions as a parametrs
 
 - ### Map
 
@@ -679,7 +679,7 @@ Hugher Order Function is a function that accepts Functions as a parametrs
     let filtredFriends = friends.filter((el) => el.startWith("A")) // Ahmed, Amine
     ```
 
-- Reduce
+- ### Reduce
 
   - The reduce() method executes a reducer function for array element.
 
@@ -726,3 +726,23 @@ Hugher Order Function is a function that accepts Functions as a parametrs
         a // [1, 2, 3]
       })
       ```
+
+- ### ForEach
+
+  - The forEach() method calls a function for each element in an array.
+
+  - The forEach() method is not executed for empty elements.
+
+  - The forEach() method Doesnt return anything [Undefined]
+
+  - Syntax
+
+    ```
+    let navLinks = document.querySelectorAll("nav ul li");
+
+    navLinks.forEach(li => {
+      li.onclick(li => {
+        this.classList.add("active");
+      })
+    })
+    ```
