@@ -791,3 +791,22 @@ Higher Order Function is a function that accepts Functions as a parametrs
   user[myVar] // Morocco
   user.myVar // error
   ```
+
+- ### Nested Object
+
+  ```
+  let user = {
+    name: "saad"
+    skills: ["Front end", "Back end", "Ui design", "Graphic & Motion DEsign"],
+    experience: {
+      casablanca: {
+        youstar: "2 years as a designer",
+        a2i : "3 months as a php developer"
+      }
+      rabat: "No Experience yet"
+    }
+  }
+
+  user.experience.casablanca.a2i // 3 months as a php developer
+  user["experience"]["casablanca"]["youstar"] // 2 years as a designer
+  ```
