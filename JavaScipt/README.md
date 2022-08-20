@@ -763,4 +763,31 @@ Higher Order Function is a function that accepts Functions as a parametrs
       // do something
     }
   }
+
+  // Acces
+  car.name // Dacia
+  car.color // red
+  car.go() // do something
+  ```
+
+- ### Dot Notation vs Bracket Notation
+
+  ```
+  let myVar = "country";
+
+  let user = {
+    name: "saad",
+    contry: "Morocco";
+    "date of birdth": "2001/12/13"
+  }
+
+  user.name // saad
+  user["name"] // saad
+
+  user["date of birdth"] // 2001/12/13
+  user.date of birdth // error
+  user."date of birdth" // error
+
+  user[myVar] // Morocco
+  user.myVar // error
   ```
