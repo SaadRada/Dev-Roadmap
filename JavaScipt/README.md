@@ -858,3 +858,28 @@ Higher Order Function is a function that accepts Functions as a parametrs
   - Methods like call(), apply(), and bind() can refer this to any object.
 
 # DOM - Document Object Model
+
+- ## Selectors
+
+  - ### getElementById
+    ```
+    document.getElementById("btn");
+    ```
+  - ### getElementsByClassName
+    ```
+    document.getElementsByClassName("links");
+    ```
+  - ### getElementsByTagName
+    ```
+    document.getElementsByTagName("div");
+    ```
+  - ### querySelector
+    ```
+    document.querySelector("ul li") // get first li
+    document.querySelectorAll("ul li") // get all li
+    ```
+  - ### Collection
+    ```
+    document.links // get all links
+    document.forms // get all forms
+    ```
