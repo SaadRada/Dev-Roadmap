@@ -791,6 +791,16 @@ Higher Order Function is a function that accepts Functions as a parametrs
     let newUser = Object.create(object to use as a prototype / or empty)
     ```
 
+  - Object Assign
+
+    ```
+    Object.assign(target, ...sources)
+    ```
+
+    - The target object — what to apply the sources' properties to, which is returned after it is modified.
+
+    - The source object(s) — objects containing the properties you want to apply.
+
 - ### Acces With Dot Notation and Bracket Notation
 
   ```
