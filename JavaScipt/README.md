@@ -883,3 +883,34 @@ Higher Order Function is a function that accepts Functions as a parametrs
     document.links // get all links
     document.forms // get all forms
     ```
+
+- ## Get / Set Elements Content And Attributes
+
+  - ### innerHTML
+
+    ```
+    let div = document.querySelector("div");
+
+    div.innerHTML // get the html inside the div
+    div.innerHTML = "<h1>Hello World</h1>" // set the html inside the div
+    ```
+
+  - ### textContent
+
+    ```
+    let div = document.querySelector("div");
+
+    div.textContent // get the text Content for the div
+    div.textContent = "<h1>Hello World</h1>" // set the text Content for the div
+    ```
+
+  - ### getAttribute and setAttribute
+
+    ```
+    let link = document.querySelector(".link");
+
+    link.getAttribute("class") // link
+    link.getAttribute("href") // #
+
+    link.setAttribute("href", "#home") // update link href
+    ```
