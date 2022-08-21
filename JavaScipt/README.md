@@ -856,3 +856,5 @@ Higher Order Function is a function that accepts Functions as a parametrs
   - In a function, in strict mode, this is undefined.
   - In an event, this refers to the element that received the event.
   - Methods like call(), apply(), and bind() can refer this to any object.
+
+# DOM - Document Object Model
