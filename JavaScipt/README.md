@@ -770,12 +770,25 @@ Higher Order Function is a function that accepts Functions as a parametrs
     }
     ```
 
-  - New Keyword
+  - New Object
 
     ```
     let user = new Object({
       ...
     })
+    ```
+
+  - Create Object
+
+    ```
+    let user = {
+      name: "saad",
+      message: function () {
+        return "hello world";
+      },
+    };
+
+    let newUser = Object.create(object to use as a prototype / or empty)
     ```
 
 - ### Acces With Dot Notation and Bracket Notation
