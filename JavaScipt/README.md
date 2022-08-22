@@ -21,8 +21,8 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - [x] Arrays
 - [x] Loop
 - [x] Functions & Scope
-- Higher Order Functions And Practice
-- Objects
+- [x] Higher Order Functions And Practice
+- [x] Objects
 - Document Object Model [DOM]
 - Browser Object Model [BOM]
 - Destructuring
@@ -913,4 +913,15 @@ Higher Order Function is a function that accepts Functions as a parametrs
     link.getAttribute("href") // #
 
     link.setAttribute("href", "#home") // update link href
+    ```
+
+  - ### attributes, hasAttribute, hasAttributes and removeAttribute
+
+    ```
+    let p = document.querySelector("p:first-child");
+
+    p.attributes // get all p attributes
+    p.hasAttribute("title") // check if p has title attribute, return boolean
+    p.removeAttribute("title") // remove title attribute
+    p.hasAttributes // check if p has any attributes, return boolean
     ```
