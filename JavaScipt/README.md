@@ -925,3 +925,5 @@ Higher Order Function is a function that accepts Functions as a parametrs
     p.removeAttribute("title") // remove title attribute
     p.hasAttributes // check if p has any attributes, return boolean
     ```
+
+  - test
