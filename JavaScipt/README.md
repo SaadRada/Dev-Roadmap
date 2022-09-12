@@ -959,3 +959,17 @@ Higher Order Function is a function that accepts Functions as a parametrs
     div.firstElementChild // <span>Saad</span>
     div.lastElementChild // <span>Saad</span>
     ```
+
+  - DOM Events
+    - onclick
+    - oncontextmenu // right click
+    - onmouseenter
+    - onmouseleave
+    - window :
+      - onload
+      - onscroll
+      - onresize
+    - inputs :
+      - onfocus
+      - onblur
+      - onsubmit
