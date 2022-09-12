@@ -280,8 +280,8 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
     - === : Compare Value and Data Type
     - != : Not equales values
     - !== : Not equales Value and data type
-    - > : greater than
-    - > = : greater than or equale
+    - ">" : greater than
+    - ">" = : greater than or equale
     - < : less than
     - <= : less than or equale
   - #### Logical Operators
@@ -440,7 +440,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 
   #### Array Basic Sorting
 
-  - ##### Sort and R everse
+  - ##### Sort and Reverse
 
     alphabetically sorting from 0 1 ... to a b c...
 
@@ -925,5 +925,3 @@ Higher Order Function is a function that accepts Functions as a parametrs
     p.removeAttribute("title") // remove title attribute
     p.hasAttributes // check if p has any attributes, return boolean
     ```
-
-  - test
