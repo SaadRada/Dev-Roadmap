@@ -925,3 +925,21 @@ Higher Order Function is a function that accepts Functions as a parametrs
     p.removeAttribute("title") // remove title attribute
     p.hasAttributes // check if p has any attributes, return boolean
     ```
+
+  - Create and Append Elements
+
+    ```
+    // create paragraphe element
+    let p = document.createElement("p");
+    let text = document.createTextNode("Hello everyone");
+
+    // set class name
+    p.className = "description";
+
+    // set undifined attribute
+    p.setAttribute("data-test", "value");
+
+    // append text to the paragraphe
+    p.appendChild(text);
+    document.body.appendChild(p);
+    ```
