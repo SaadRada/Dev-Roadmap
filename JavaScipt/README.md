@@ -943,3 +943,19 @@ Higher Order Function is a function that accepts Functions as a parametrs
     p.appendChild(text);
     document.body.appendChild(p);
     ```
+
+  - Deal with Childrens's
+
+    ```
+    let div = document.querySelector("div");
+
+    div // <div>Hello<span>Saad</span><!-- this is a comment --></div>
+    div.children // <span>Saad</span>
+    div.childNodes // text span comment
+
+    div.firstChild // Hello
+    div.firstChild // <!-- this is a comment -->
+
+    div.firstElementChild // <span>Saad</span>
+    div.lastElementChild // <span>Saad</span>
+    ```
