@@ -1054,3 +1054,9 @@ Higher Order Function is a function that accepts Functions as a parametrs
     - nextElementSibling : Direct next element Sibling
     - previousElementSibling : Direct previous element Sibling
     - parentElement : Acces to parent element that contains all Sibling
+  - ### DOM Cloning
+    - Clone element withot change it
+    ```
+    let newP - document.querySelector("p").cloneNode(); // clone empty element with attributes
+    let newP - document.querySelector("p").cloneNode(true); // clone full element with attributes and content
+    ```
