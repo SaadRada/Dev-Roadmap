@@ -1048,3 +1048,9 @@ Higher Order Function is a function that accepts Functions as a parametrs
     - Prepend : add inside the element in the first
     - Append : add inside the element in the last
     - Remove : Remove the element
+  - ### DOM Traversing
+    - nextSibling : Direct next Sibling
+    - previousSibling : Direct previous Sibling
+    - nextElementSibling : Direct next element Sibling
+    - previousElementSibling : Direct previous element Sibling
+    - parentElement : Acces to parent element that contains all Sibling
