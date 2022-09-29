@@ -1020,3 +1020,24 @@ Higher Order Function is a function that accepts Functions as a parametrs
       navBar.classlist.toggle("dark-mode");
     }
     ```
+
+  - ### Css Styling
+
+    - inline style
+
+      ```
+      p.style.color = "red";
+      div.backgroundColor = "gray";
+
+      body.style.cssText = "padding:0; margin:0";
+
+      div.style.removeProperty("color");
+      div.style.setProperty("font-weight", "bold", "important");
+      ```
+
+    - external style
+
+      ```
+      document.styleSheets[0].rules[0].removeProperty("color"); // remove from css file
+      document.styleSheets[0].rules[0].setProperty("color", "red"); // add to css file
+      ```
