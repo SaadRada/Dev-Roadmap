@@ -1041,3 +1041,10 @@ Higher Order Function is a function that accepts Functions as a parametrs
       document.styleSheets[0].rules[0].removeProperty("color"); // remove from css file
       document.styleSheets[0].rules[0].setProperty("color", "red"); // add to css file
       ```
+
+  - ### Before, After, Prepend, Append, Remove
+    - Before : add Before the element
+    - After : add After the element
+    - Prepend : add inside the element in the first
+    - Append : add inside the element in the last
+    - Remove : Remove the element
