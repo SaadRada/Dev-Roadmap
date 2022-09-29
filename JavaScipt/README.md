@@ -1001,3 +1001,22 @@ Higher Order Function is a function that accepts Functions as a parametrs
       input.focus();
     }
     ```
+
+  - ### Class List Object & Methods
+
+    - length : get length
+    - contains : check if contain a class
+    - item(index) : get class by index
+    - add : add class
+    - remove : remove class
+    - toggle : toggle class (add if not exist, remove if exist)
+
+    ```
+    let app = coument.querySelector(".app");
+
+    navBar.onclick = () => {
+      navBar.classlist.add(".dark-mode");
+      navBar.classlist.remove("dark-mode");
+      navBar.classlist.toggle("dark-mode");
+    }
+    ```
