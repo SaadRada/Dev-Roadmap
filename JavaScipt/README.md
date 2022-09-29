@@ -987,3 +987,17 @@ Higher Order Function is a function that accepts Functions as a parametrs
       // ....
     }
     ```
+
+  - ### DOM Event Simulation
+
+    - click
+    - focus
+    - blur
+
+    ```
+    let input = document.querySelector("#input");
+
+    window.onload = () => {
+      input.focus();
+    }
+    ```
