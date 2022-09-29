@@ -926,7 +926,7 @@ Higher Order Function is a function that accepts Functions as a parametrs
     p.hasAttributes // check if p has any attributes, return boolean
     ```
 
-  - Create and Append Elements
+  - ### Create and Append Elements
 
     ```
     // create paragraphe element
@@ -944,7 +944,7 @@ Higher Order Function is a function that accepts Functions as a parametrs
     document.body.appendChild(p);
     ```
 
-  - Deal with Childrens's
+  - ### Deal with Childrens's
 
     ```
     let div = document.querySelector("div");
@@ -960,7 +960,8 @@ Higher Order Function is a function that accepts Functions as a parametrs
     div.lastElementChild // <span>Saad</span>
     ```
 
-  - DOM Events
+  - ### DOM Events
+
     - onclick
     - oncontextmenu // right click
     - onmouseenter
@@ -973,3 +974,16 @@ Higher Order Function is a function that accepts Functions as a parametrs
       - onfocus
       - onblur
       - onsubmit
+
+    ```
+    let btn = document.querySelector("#btn");
+
+    // check btn clicked
+    btn.addEventListener("click", () => {
+      // ....
+    })
+
+    btn.onclick = () => {
+      // ....
+    }
+    ```
