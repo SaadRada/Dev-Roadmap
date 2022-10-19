@@ -24,12 +24,11 @@
 
 <img align="left" src="https://i.stack.imgur.com/hLbdt.png"/>
 
-- **package.json** : contain the depandacy and the scripts require for the project
-
-- **package.json** : contain the depandacy and the scripts require for the project
-
-- **package.json** : contain the depandacy and the scripts require for the project
-
-- **package.json** : contain the depandacy and the scripts require for the project
-
-</div>
+- **package.json** : contain the dependencies and the scripts require for the project
+- **gitignore** : ignored files on pushing
+- **README** : Markdown file contain the documentation
+- **node-modules** : Contain all dependencies (library, framworks ...)
+- **public** : the main accesible folder that contain the signle page html **index.html**
+- **src** : the most important folder, contain all applications components and assets
+- **index** : starter point render the app component
+- **app** : the main component rendred in index js file
