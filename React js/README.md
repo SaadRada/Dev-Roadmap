@@ -22,14 +22,14 @@
 
 ## Folder Structure
 
-<div style="display:flex;gap:5px">
-
-![react js folder structure](https://i.stack.imgur.com/hLbdt.png)
-
-<div>
+<img align="left" src="https://i.stack.imgur.com/hLbdt.png"/>
 
 - **package.json** : contain the depandacy and the scripts require for the project
 
-<div/>
+- **package.json** : contain the depandacy and the scripts require for the project
+
+- **package.json** : contain the depandacy and the scripts require for the project
+
+- **package.json** : contain the depandacy and the scripts require for the project
 
 </div>
