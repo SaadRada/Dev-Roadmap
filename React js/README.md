@@ -34,3 +34,25 @@ The main files :
 - **app js** : the main component rendred in index js file
 - **app css** : the style of the app component
 - **index.css** : the style of the body tag
+
+## Components
+
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types
+
+- Class components : requires you to extend from React.Component and create a render function which returns a React element
+- Function components : a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX)
+
+## Hooks
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+- useState
+- useEffects
+- useRef
+- ...
+
+## JSX
+
+- JSX stands for JavaScript XML.
+- JSX allows us to write HTML in React.
+- JSX makes it easier to write and add HTML in React.
