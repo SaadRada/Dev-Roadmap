@@ -113,3 +113,44 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
     }
   }
   ```
+
+## State
+
+- React components has a built-in state object.
+- The state object is where you store property values that belongs to the component.
+- When the state object changes, the component re-renders.
+- state
+- in a class component we will use the **constructor**
+- **constructor** is a magic method used to initialize an object's state in a class, it automatically called during the creation of an object
+- **super()** It is used to call the constructor of its parent class. This is required when we need to access some variables of its parent class
+
+  ```
+  import React, { Component } from 'react'
+
+  export class App extends Component {
+
+    constructor() {
+      super()
+      this.state = {
+        message: "Hello Saad"
+      }
+    }
+
+    changeMessage() {
+      this.setState ({
+        message: "Thank you for subscribing"
+      })
+    }
+
+    render() {
+      return (
+        <div>
+          <h1>{this.state.message}</h1>
+          <button onClick={() => {this.changeMessage()}}>Subscribe</button>
+        </div>
+      )
+    }
+  }
+
+  export default App
+  ```
