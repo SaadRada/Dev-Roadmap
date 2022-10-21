@@ -56,3 +56,49 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 - JSX stands for JavaScript XML.
 - JSX allows us to write HTML in React.
 - JSX makes it easier to write and add HTML in React.
+
+- JS code :
+  ```
+  const App = () => {
+  return React.createElement("div", null, "Hello world!");
+  };
+  ```
+- JSX code :
+  ```
+  const App = () => {
+    return <div>Hello world!</div>
+  }
+  ```
+
+## Props
+
+- Props is an object passed with attributes and values
+- Props allow us to reuse the same component with diffirent content
+- Props are arguments passed into React components.
+- Props are passed to components via HTML attributes.
+- React Props are like function arguments in JavaScript and attributes in HTML.
+
+- App Component
+  ```
+  import Car from "path";
+  const App = () => {
+    return(
+      <div>
+        <Car name="Dacia"/>
+          <p>This is children props</p>
+        <Car/>
+        <Car name="Renault"/>
+        </>
+      <div/>
+    )
+  }
+  ```
+- Car Component
+  ```
+  const Car (props) => {
+    return (
+      <h2>{props.name}<h2/>
+      {props.children}
+    )
+  }
+  ```
