@@ -154,3 +154,11 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 
   export default App
   ```
+
+## Props vs State
+
+| Props                   | State                                  |
+| ----------------------- | -------------------------------------- |
+| passed to the component | managed within the component           |
+| Function paranetrs      | Variable declared in the function body |
+| Immutable(can't change) | can be changed                         |
