@@ -224,3 +224,43 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
   }
   export default Greet;
   ```
+
+## Event Handling
+
+- Function
+
+  ```
+  const App = () => {
+
+    const sayHello = () => {
+      consol.log("Hello")
+    }
+
+    return(
+      <div>
+        <button onClick={sayHello}>Click</button>
+      </div>
+    )
+  }
+  ```
+
+- Class
+
+  ```
+  const App = () => {
+
+    Class sayHello extends Component{
+
+    sayHello() {
+      consol.log("Hello")
+    }
+
+    render() {
+      return(
+        <div>
+          <button onClick={this.sayHello}>Click</button>
+        </div>
+      )
+    }
+  }
+  ```
