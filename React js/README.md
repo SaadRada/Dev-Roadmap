@@ -162,3 +162,65 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 | passed to the component | managed within the component           |
 | Function paranetrs      | Variable declared in the function body |
 | Immutable(can't change) | can be changed                         |
+
+## setState
+
+- the setState() method is used to change the state object. It ensures that the component has been updated and calls for re-rendering of the component.
+
+  ```
+  setState({ stateName : updatedStateValue })
+
+  // OR
+  setState((prevState) => ({
+    stateName: prevState.stateName + 1
+  }))
+  ```
+
+## Destructuring Props and State
+
+- Destructuring is a simple property that is used to make code much clear and readable, mainly when we pass props in React.
+- Destructuring is a characteristic of JavaScript, It is used to take out sections of data from an array or objects, We can assign them to new own variables created by the developer.
+- In destructuring, It does not change an array or any object, it makes a copy of the desired object or array element by assigning them in its own new variables, later we can use this new variable in React (class or functional) components.
+- Without Destructuring
+
+  ```
+  import React from 'react';
+
+  const Greet = props =>{
+    return (
+      <div>
+        <div className="XYZ">
+        <h3> {props.active} </h3>
+        </div>
+
+        <div className="PQR">
+          <h1>{props.activeStatus}</h1>
+        </div>
+      </div>
+      )
+  }
+  export default Greet;
+  ```
+
+- With Destructuring
+
+  ```
+  import React from 'react';
+
+  const Greet = props =>{
+    // Destructuring
+    const {active, activeStatus} = props;
+    return (
+      <div>
+        <div className="XYZ">
+        <h3> {active} </h3>
+        </div>
+
+        <div className="PQR">
+          <h1>{activeStatus}</h1>
+        </div>
+      </div>
+      )
+  }
+  export default Greet;
+  ```
