@@ -102,3 +102,14 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
     )
   }
   ```
+- **NOTICE** : in class component should be use **this** keyword before props
+  ```
+    class Car extends Component {
+    render() {
+      return (
+        <h2>{props.name}<h2/>
+        {this.props.children}
+      )
+    }
+  }
+  ```
