@@ -274,8 +274,50 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
   ```
   <button onClick={this.handleClick.bind(this)}>
   or
-  // add in the contructer
+  // add in the contructor
   this.handleClick = this.handleClick.bind(this)
   ```
 
 - as a conclusion we using bind method to refer this to the class
+
+## Method as a Props
+
+- parent component
+
+  ```
+  class Parent extends Component {
+    constructor(props) {
+      super(props)
+
+      this.state = {
+        name: "parent"
+      }
+
+      this.greetParent = this.greetParent.bind(this)
+    }
+
+    greetParemt () {
+      alert(`Hello ${this.state.name}`);
+    }
+
+    render() {
+      return(
+        <div>
+          <Child greetHandler={this.greetParent}/>
+        </div>
+      )
+    }
+  }
+  ```
+
+- child component
+
+  ```
+  const Child = () => {
+    return (
+      <div>
+        <button onClick={props.greetHandler}>greet parent</button>
+      </div>
+    )
+  }
+  ```
