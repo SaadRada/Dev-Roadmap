@@ -321,3 +321,55 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
     )
   }
   ```
+
+## Conditional Rendering
+
+- Element Variables
+
+  ```
+  class App extends Component {
+    constructor(props) {
+      super(props)
+
+      this.state = {
+        login: false
+    }
+    let message
+    this.state.login ? message = 'Welcome' : message = "you need to login"
+    return (
+      <div>
+        {message}
+      </div>
+    )
+  }
+  ```
+
+- Inline If with Logical && Operator
+
+  ```
+  function Mailbox(props) {
+    const unreadMessages = props.unreadMessages;
+    return (
+      <div>
+        <h1>Hello!</h1>
+        {unreadMessages.length > 0 &&
+          <h2>
+            You have {unreadMessages.length} unread messages.
+          </h2>
+        }
+      </div>
+    );
+  }
+  ```
+
+- Inline If-Else with Conditional Operator
+  ```
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    return (
+      <div>
+        The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
+      </div>
+    );
+  }
+  ```
