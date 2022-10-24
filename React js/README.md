@@ -272,7 +272,10 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 - Binding methods helps ensure that the second snippet works the same way as the first one. With React, typically you only need to bind the methods you pass to other components. For example
 
   ```
-  <button onClick={this.handleClick}>
+  <button onClick={this.handleClick.bind(this)}>
+  or
+  // add in the contructer
+  this.handleClick = this.handleClick.bind(this)
   ```
 
 - as a conclusion we using bind method to refer this to the class
