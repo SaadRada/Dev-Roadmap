@@ -375,3 +375,35 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
   ```
 
 ## List Rendering
+
+- with **map** and **filter** methods
+  ```
+  const users = [
+    {
+      name: 'saad',
+      city: 'casablanca'
+    }, ...
+  ]
+  return (
+      <div>
+        <h3>All users</h3>
+        <ul>
+          {
+            users.map(user => <li>{user.name}</li>)
+          }
+        </ul>
+        <h3>Users from Casablanca</h3>
+        <ul>
+          {
+            users.filter(user => user.city === 'casablanca').map(user => <li>{user.name}</li>)
+          }
+        </ul>
+        <h3>Users from Bouskoura</h3>
+        <ul>
+          {
+            users.filter(user => user.city === 'bouskoura').map(user => <li>{user.name}</li>)
+          }
+        </ul>
+      </div>
+    )
+  ```
