@@ -267,10 +267,12 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 
 ## Bind
 
-Binding methods helps ensure that the second snippet works the same way as the first one. With React, typically you only need to bind the methods you pass to other components. For example,
+- In ReactJS, components are rendered to the user interface and the component's logic contains the data to be displayed in the view(UI). The connection between the data to be displayed in the view and the component's logic is called data binding
 
-```
-<button onClick={this.handleClick}>
-```
+- Binding methods helps ensure that the second snippet works the same way as the first one. With React, typically you only need to bind the methods you pass to other components. For example
 
-passes this.handleClick so you want to bind it.
+  ```
+  <button onClick={this.handleClick}>
+  ```
+
+- as a conclusion we using bind method to refer this to the class
