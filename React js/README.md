@@ -407,3 +407,7 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
       </div>
     )
   ```
+
+## Keys
+
+- A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists
