@@ -431,3 +431,116 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
   ```
 
 - Css Modules : A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. CSS Modules let you write styles in CSS files but consume them as JavaScript objects for additional processing and safety.
+
+## Form Handling
+
+- Handling forms is about how you handle the data when it changes value or gets submitted.
+
+- In HTML, form data is usually handled by the DOM.
+
+- In React, form data is usually handled by the components.
+
+- When the data is handled by the components, all the data is stored in the component state.
+
+- You can control changes by adding event handlers in the onChange attribute.
+
+- We can use the (useState in function component) (this.state in class component) Hook to keep track of each inputs value and provide a "single source of truth" for the entire application.
+
+- #### Class Component
+
+  ```
+  class Form extends Component {
+    constructor(props) {
+      super(props)
+
+      this.state = {
+        email: '',
+        password: '',
+        company: 'AINSI'
+      }
+
+      this.handleInputs = this.handleInputs.bind(this)
+      this.getData = this.getData.bind(this)
+    }
+
+    handleInputs(e) {
+      this.setState({
+        [e.target.name]: e.target.value
+      })
+    }
+
+    getData(e) {
+      console.log(`${this.state.email} - ${this.state.password} - ${this.state.company}`);
+      e.preventDefault();
+    }
+    render() {
+      return (
+        <form onSubmit={this.getData}>
+          <h1>Form Handling</h1>
+          <div>
+            <label>Email</label>
+            <input type="email" name='email' value={this.state.email} onChange={this.handleInputs} />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" name='password' value={this.state.password} onChange={this.handleInputs} />
+          </div>
+          <div>
+            <label>Company</label>
+            <select name="company" value={this.state.company} onChange={this.handleInputs}>
+              <option value="AINSI">AINSI</option>
+              <option value="EDF">EDF</option>
+              <option value="ANEF">ANEF</option>
+            </select>
+          </div>
+          <div>
+            <button className='btn' type='submit'>Submit</button>
+          </div>
+        </form>
+      )
+    }
+  }
+
+  export default Form
+  ```
+
+- #### Function Component
+
+  ```
+  function MyForm() {
+    const [inputs, setInputs] = useState({});
+
+    const handleChange = (event) => {
+      const name = event.target.name;
+      const value = event.target.value;
+      setInputs(values => ({...values, [name]: value}))
+    }
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert(inputs);
+    }
+
+    return (
+      <form onSubmit={handleSubmit}>
+        <label>Enter your name:
+        <input
+          type="text"
+          name="username"
+          value={inputs.username || ""}
+          onChange={handleChange}
+        />
+        </label>
+        <label>Enter your age:
+          <input
+            type="number"
+            name="age"
+            value={inputs.age || ""}
+            onChange={handleChange}
+          />
+          </label>
+          <input type="submit" />
+      </form>
+    )
+  }
+  ```
