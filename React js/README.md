@@ -412,3 +412,22 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 
 - A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists
 - we can use the index as a key from the map, filter ... methods
+
+## Styling Component
+
+- Css Stylesheets : create a new css file and import it in the component
+- inline Styling : add constant before return and call it in style attribute
+
+  ```
+  const App = () => {
+    const primary = {
+      fontSize : '16px',
+      color : 'red'
+    }
+    return (
+      <div style={primary}>Hello World</div>
+    )
+  }
+  ```
+
+- Css Modules : A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. CSS Modules let you write styles in CSS files but consume them as JavaScript objects for additional processing and safety.
