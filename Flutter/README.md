@@ -12,3 +12,9 @@ Flutter based on Dart, Dart is a programming language created by Google Focused 
 
 Apps UI is a widget tree
 ![flutter architecture](https://docs.flutter.dev/assets/images/docs/arch-overview/platform-channels.png)
+
+## Material Dessign
+
+- Material is a design system created and used by Google
+- It's not Google style for evryone! it's indeed highly customiable (and work on IOS devices too)
+- Material Dessign is built into flutter but you also find Apple-styled (Cupertino) widgets
