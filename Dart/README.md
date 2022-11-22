@@ -125,6 +125,7 @@ the same for javascipt
 
 ## Number Methods
 
+- toString()
 - isFinite
 - isInfinite
 - isNegative
@@ -177,3 +178,12 @@ the same for javascipt
 - floor() : convert double to int
 - toInt() : double to integer
 - num.parse("10") : convert string to number
+
+## String Methods
+
+- isEmpty
+- length
+- toLowerCase()
+- toUpperCase()
+- trim()
+  ... same for javascript
