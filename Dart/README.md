@@ -103,4 +103,18 @@ String name = "saad";
 
 print(name is String); // true
 print(name is int); // false
+print(name is! String); // false
+is! == is not
+```
+
+## Asignement opertor
+
+```
+int age = 21;
+int price;
+
+age ??= 33; // if age null assign the value
+price ??= 300;
+print(age); // 21
+print(price); // 300
 ```
