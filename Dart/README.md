@@ -258,3 +258,30 @@ the same for javascipt
   ```
 
 - **insertAll** : insert list in spesefic position
+- **remove**
+
+  ```
+  List x = [1, 2, 3];
+  x.remove(2);
+
+  print(x); // [1, 3]
+  ```
+
+- **removeAt**
+
+  ```
+  List x = [1, 2, 3];
+  x.removeAt(0);
+
+  print(x); [2, 3]
+  ```
+
+- **removeRange**
+
+  ```
+  List x = [1, 2, 3, 4, 5];
+
+  x.removeRange(0,2);
+
+  print(x); // [3, 4, 5]
+  ```
