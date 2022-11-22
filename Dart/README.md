@@ -83,3 +83,8 @@ void main() {
   print(name); // error
   print(lastName); // null
   ```
+
+- **Late**
+  ```
+  late String name; // this variable will get a value later
+  ```
