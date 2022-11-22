@@ -30,49 +30,50 @@ void main() {
   print("The Full Name is $name $lastName");
   ```
 
-- **Data Type**
+## Data Type
 
-  - String
-    ```
-    String name = "Saad";
-    ```
-  - int
-    ```
-    int age = 21;
-    ```
-  - double
-    ```
-    double rate = 4.5;
-    ```
-  - num
-  - List (Array)
+- String
+  ```
+  String name = "Saad";
+  ```
+- int
+  ```
+  int age = 21;
+  ```
+- double
+  ```
+  double rate = 4.5;
+  ```
+- num
+- List (Array)
 
-    ```
-    List countries = [];
-    countries.add("Morocco");
-    countries.add("Egypt");
-    countries.add("Tunisia");
+  ```
+  List countries = [];
+  countries.add("Morocco");
+  countries.add("Egypt");
+  countries.add("Tunisia");
 
-    print(countries);
-    print(countries[0]);
-    ```
+  print(countries);
+  print(countries[0]);
+  ```
 
-  - Map (Object)
+- Map (Object)
 
-    ```
-    Map data = Map();
-    data['id'] = 1;
-    data['name'] = "saad";
-    data['age'] = 21;
+  ```
+  Map data = Map();
+  data['id'] = 1;
+  data['name'] = "saad";
+  data['age'] = 21;
 
-    print(data);
-    print(data['id']);
-    ```
+  print(data);
+  print(data['id']);
+  ```
 
-  - bool
-    ```
-    bool isClicked = false
-    ```
+- bool
+
+  ```
+  bool isClicked = false
+  ```
 
 - **Null safety**
 
@@ -88,3 +89,18 @@ void main() {
   ```
   late String name; // this variable will get a value later
   ```
+
+## Arithmetic, Logical operators
+
+it's the same for javascipt
+
+## Check data type
+
+we can check data type in dart by **is** keyword and the result is a boolean value
+
+```
+String name = "saad";
+
+print(name is String); // true
+print(name is int); // false
+```
