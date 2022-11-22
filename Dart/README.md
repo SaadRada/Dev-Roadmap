@@ -187,3 +187,74 @@ the same for javascipt
 - toUpperCase()
 - trim()
   ... same for javascript
+
+## Work with List
+
+- **Declaration**
+  ```
+  List name = [];
+  ```
+- **Indexing**
+
+  ```
+  List numbers = [1, 2, 3, 4, 5];
+
+  print(umbers[0]); // 1
+  ```
+
+- **add**
+
+  ```
+  List numbers = [1, 2, 3];
+
+  numbers.add(4);
+
+  print(numbers); // [1, 2, 3, 4]
+  ```
+
+- **length**
+
+  ```
+  List numbers = [1, 2, 3, 4];
+
+  print(numbers.length); // 4
+  ```
+
+- **first and lasr **
+
+  ```
+  List numbers = [1, 2, 3, 4];
+
+  print(numbers.first); // 1
+  print(numbers.last); // 4
+  ```
+
+- **isEmpty**
+- **isNotEmpty**
+- **reversed**
+
+  ```
+  List numbers = [1, 2, 3, 4];
+
+  print(numbers.reversed.toList()); // [4, 3, 2, 1]
+  ```
+
+- **addAll**
+  add list to list
+
+  ```
+  List numbers = [1, 2, 3];
+
+  print(numbers.add([4, 5, 6])); // [1, 2, 3, [4, 5, 6]]
+  print(numbers.addAll([4, 5, 6])); // [1, 2, 3, 4, 5, 6]
+  ```
+
+- **insert**
+
+  ```
+  List x = [1, 2, 3];
+
+  x.insert(0, 4); // add in the first
+  ```
+
+- **insertAll** : insert list in spesefic position
