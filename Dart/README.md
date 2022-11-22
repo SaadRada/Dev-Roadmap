@@ -122,3 +122,58 @@ print(price); // 300
 ## Control Flow (if else, loops)
 
 the same for javascipt
+
+## Number Methods
+
+- isFinite
+- isInfinite
+- isNegative
+- sign
+
+  ```
+  var x = 10;
+  var y = -30;
+
+  print(x.sign); // 1
+  print(y.sign); // -1
+
+  return 1 if positive
+  return -1 is negative
+  return 0 is number equal to 0
+  ```
+
+- isEven
+
+  ```
+  var x = 2;
+  var y = 3;
+
+  print(x.isEven); // true 2 % 2 = 0
+  print(y.isEven); // 3 % 2 != 0
+  ```
+
+- isOdd : Reverse of isEven
+- abs() : return positive number
+- ceil()
+
+  ```
+  double x = 1.2;
+
+  print(x.ceil()); // 2
+  ```
+
+- round()
+
+- compatTo() : compare two numbers
+
+  ```
+  int x = 10;
+
+  print(x.comparTo(10)); // 0
+  print(x.comparTo(21)); // -1
+  print(x.comparTo(1)); // 1
+  ```
+
+- floor() : convert double to int
+- toInt() : double to integer
+- num.parse("10") : convert string to number
