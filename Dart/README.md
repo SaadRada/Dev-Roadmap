@@ -17,6 +17,7 @@ void main() {
 ## Variables
 
 - **Declaration**
+  var is a dynamic data type
   ```
   var name = value;
   DataType name = value;
@@ -304,3 +305,33 @@ Map data = {
 - **length** : get length
 - **remove** : remove with key
 - **clear** : clear the map
+
+## Functions
+
+- **Decalaration**
+
+  ```
+  funcName() {
+    // code
+  }
+
+  funcName(); // call
+  ```
+
+- **with parametrs**
+
+  ```
+  calculate(int a, int b) {
+    return a + b;
+  }
+
+  print(calculate(3, 2)); // 5
+  ```
+
+- **Arrow Function**
+
+  ```
+  calculat(int a, int b) => a + b;
+
+  print(calculate(3, 2)); // 5
+  ```
