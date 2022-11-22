@@ -73,3 +73,13 @@ void main() {
     ```
     bool isClicked = false
     ```
+
+- **Null safety**
+
+  ```
+  String name;
+  string? lastName; // ? could be null
+
+  print(name); // error
+  print(lastName); // null
+  ```
