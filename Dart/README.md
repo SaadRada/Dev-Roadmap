@@ -13,3 +13,10 @@ void main() {
   print("Hello World");
 }
 ```
+
+## Variables
+
+```
+var name = value;
+DataType name = value;
+```
