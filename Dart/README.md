@@ -107,7 +107,7 @@ print(name is! String); // false
 is! == is not
 ```
 
-## Asignement opertor
+## Assignement opertor
 
 ```
 int age = 21;
@@ -118,3 +118,7 @@ price ??= 300;
 print(age); // 21
 print(price); // 300
 ```
+
+## Control Flow (if else, loops)
+
+the same for javascipt
