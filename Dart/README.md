@@ -188,7 +188,7 @@ the same for javascipt
 - trim()
   ... same for javascript
 
-## Work with List
+## List Methods
 
 - **Declaration**
   ```
@@ -285,3 +285,22 @@ the same for javascipt
 
   print(x); // [3, 4, 5]
   ```
+
+## Map Methods
+
+```
+Map data = {
+  'id': 1,
+  'name' : 'saad',
+  'age' : 21
+};
+```
+
+- **addAll** : add in the last or update if key already exist
+- **isEmpty** : check is empty : bool
+- **isNotEmpty** : check is not empty : bool
+- **keys** : get only keys
+- **values** : get only values
+- **length** : get length
+- **remove** : remove with key
+- **clear** : clear the map
