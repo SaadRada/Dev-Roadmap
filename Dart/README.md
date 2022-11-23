@@ -33,20 +33,20 @@ void main() {
 
 ## Data Type
 
-- String
+- **String**
   ```
   String name = "Saad";
   ```
-- int
+- **int**
   ```
   int age = 21;
   ```
-- double
+- **double**
   ```
   double rate = 4.5;
   ```
-- num
-- List (Array)
+- **num**
+- **List** (Array)
 
   ```
   List countries = [];
@@ -58,7 +58,7 @@ void main() {
   print(countries[0]);
   ```
 
-- Map (Object)
+- **Map** (Object)
 
   ```
   Map data = Map();
@@ -70,7 +70,7 @@ void main() {
   print(data['id']);
   ```
 
-- bool
+- **bool**
 
   ```
   bool isClicked = false
@@ -89,6 +89,15 @@ void main() {
 - **Late**
   ```
   late String name; // this variable will get a value later
+  ```
+- **get DataType**
+
+  ```
+  String name = 'saad';
+  int age = 23;
+
+  print(name.runtimeType); // String
+  print(age.runtimeType); // int
   ```
 
 ## Arithmetic, Logical operators
@@ -287,6 +296,49 @@ the same for javascipt
   print(x); // [3, 4, 5]
   ```
 
+- **sublist**
+  sublist is used to get specefic part from other list
+  **don't modify the origin list**
+
+  ```
+  // varNAme.sublist(start, end);
+  List data = [1, 2, 3, 4, 5, 6];
+
+  print(data.sublist(0, 2)); // [1, 2, 3]
+  print(data.sublist(2)); // [3, 4, 5, 6]
+  ```
+
+- **shuffle**
+  shuffle is used to sort randomly a list
+  **modify the origin list**
+
+  ```
+  List data = [1, 2, 3, 4];
+
+  print(data.shuffle()); // [2, 4, 1, 3]
+  print(data.shuffle()); // [4, 2, 1, 3]
+  print(data.shuffle()); // [1, 4, 2, 3]
+  ```
+
+- **whereType**
+  create a new list with type verefication
+
+  ```
+  List data = ['saad', 1, 3, 'mehdi', 5, 'abdo'];
+
+  var newList = data.whereType<int>().toList(); // get only integer
+  ```
+
+- **every and any**
+  every and any method s return a boolean value based on a condition
+
+  ```
+  List data = ['saad', 'abdelmounim', 'mehdi'];
+
+  var check = data.every((e) => e.length > 2); // true all names length grater than w
+  var check2 = data.any((e) => e.length > 7); // return true becaus abdelmounim length grater than 7
+  ```
+
 ## Map Methods
 
 ```
@@ -305,6 +357,15 @@ Map data = {
 - **length** : get length
 - **remove** : remove with key
 - **clear** : clear the map
+- **asMap**
+  convert List to Map with keys as indexes
+
+  ```
+  List data = ['saad', 'mehdi', 'abdo'];
+  Map lisAsMAp = data.asMap();
+
+  print(listAsMap); // {0: saad, 1: mehdi, 2: abdo}
+  ```
 
 ## Functions
 
