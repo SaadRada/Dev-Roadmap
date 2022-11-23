@@ -335,3 +335,13 @@ Map data = {
 
   print(calculate(3, 2)); // 5
   ```
+
+## Assert
+
+the assert method is used to check data is not null
+
+```
+let a;
+assert(a != null, "message"); // get error before printing a
+print(a);
+```
