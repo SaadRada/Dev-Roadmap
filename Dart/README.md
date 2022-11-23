@@ -338,10 +338,27 @@ Map data = {
 
 ## Assert
 
-the assert method is used to check data is not null
+The assert statement is a useful tool to debug the code and it uses boolean condition for testing. If the boolean expression in assert statement is true then the code continues to execute, but if it returns false then the code ends with Assertion Error.
 
 ```
 let a;
-assert(a != null, "message"); // get error before printing a
+assert(a == null, "message"); // get error before printing a
 print(a);
 ```
+
+**note** : this is before the null safety, but now we can use only null safety withot assert
+
+```
+let a; // give error a can't be null withot null safety
+print(a);
+```
+
+## Math functions
+
+- Max()
+- Min()
+- sqrt()
+- sin()
+- cos()
+- tan()
+- ...
