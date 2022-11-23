@@ -339,6 +339,16 @@ the same for javascipt
   var check2 = data.any((e) => e.length > 7); // return true becaus abdelmounim length grater than 7
   ```
 
+- **take**
+  Returns a lazy iterable of the [count] first elements of this iterable.
+  ```
+  final numbers = <int>[1, 2, 3, 5, 6, 7];
+  final result = numbers.take(4); // (1, 2, 3, 5)
+  final result = numbers.take(4).toList(); // [1, 2, 3, 5]
+  final takeAll = numbers.take(100); // (1, 2, 3, 5, 6, 7)
+  final takeAll = numbers.take(100).toSet(); // {1, 2, 3, 5, 6, 7}
+  ```
+
 ## Map Methods
 
 ```
