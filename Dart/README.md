@@ -433,3 +433,7 @@ print(a);
 - cos()
 - tan()
 - ...
+
+## Iterable
+
+An Iterable is a collection of elements that can be accessed sequentially and can apply map forEach ... to it
