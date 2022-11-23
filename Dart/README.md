@@ -458,3 +458,41 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     List categories;
   }
   ```
+
+- ### Methods
+
+  method is a function inside a class
+
+  ```
+  void main() {
+    Post php = new Post();
+    php.title = 'php 8 Tutorial';
+    php.date = '24-11-2022';
+    ...
+  }
+
+  class Post {
+    // properties
+    ...
+
+    void like() {
+      likes ++;
+    }
+  }
+  ```
+
+- ### Constructor
+
+  A class constructor is a special member function of a class that is executed whenever we create new objects of that class. A constructor will have exact same name as the class and it does not have any return type at all, not even void.
+
+  ```
+  class Post {
+    // properties
+    ...
+    // contructor
+    Post() {
+      print("Hello from post");
+    }
+
+  }
+  ```
