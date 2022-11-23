@@ -437,3 +437,24 @@ print(a);
 ## Iterable
 
 An Iterable is a collection of elements that can be accessed sequentially and can apply map forEach ... to it
+
+## OOP - Oriented Object Programming
+
+- ### class
+
+  ```
+  void main() {
+    Post php = new Post();
+    php.title = 'php 8 Tutorial';
+    php.date = '24-11-2022';
+    ...
+  }
+
+  class Post {
+    // properties
+    String title;
+    String date;
+    int rating;
+    List categories;
+  }
+  ```
