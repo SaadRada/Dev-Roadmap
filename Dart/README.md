@@ -744,3 +744,24 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     print(phone.hasMatch('0700342660')); // true
     print(phone.hasMatch('06543241')); // false
   ```
+
+- ### Private
+
+  Private Properties are those properties that are accessible only inside the file they are defined or the class they are declared. Dart provided privacy at the library level rather than class level due to which keywords like public, private, and protected are not used, unlike most languages. Identifiers starting with an underscore “\_” are visible inside the dart library. Thus, all the private properties inside dart are declared with an underscore at the start of their name.
+
+  ```
+  class Mobile {
+    String? name;
+    double? _price; // private
+
+    Mobile(this.name, this.price); // public
+    Mobile._(this.name, this.price); // private
+
+    _printPrice() { // private
+      print(this.price);
+    }
+    printName() {
+      print(this.name);
+    }
+  }
+  ```
