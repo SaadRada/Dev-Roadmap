@@ -702,3 +702,23 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     }
   }
   ```
+
+- ### Abstract
+
+  an abstract class can't be intansed, can only inherited
+
+  ```
+  void main() {
+    Mobile samsung = new Mobile(); // error abstract class can'e be instansed
+    Samsung s21 = new Samsung();
+    print(s21.screen); // 6.5
+  }
+  abstract class Mobile {
+    double screen = 6.2;
+  }
+
+  class Samsung extends Mobile {
+
+  }
+
+  ```
