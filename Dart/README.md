@@ -571,3 +571,38 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     }
   }
   ```
+
+- ### Static properties and methods
+
+  - Static properties and methods are used to access them in a global scope
+  - Declaring class properties and methods as static makes them accessible without needding an anstantiation of the class
+  - The pseudo-variable **this** is not available in static methods
+  - A property declared as static cannot be accessed with an instantiated **without getter** class object (Though a static method can)
+
+    ```
+    void main() {
+      print(Persone.name); // undifined
+      print(Persone.age); // 21
+
+      print(Personne.sayHello); // undifined
+      print(Personne.sayBye); // Bye
+
+      Person personOne = new Person();
+
+      print(personOne.age); // can't be accessed through an instance
+      personOne.sayBye; // Bye
+    }
+
+    class Person {
+      static int age = 21;
+      late String name;
+
+      void sayHello() {
+        print("Hello");
+      }
+
+      static void sayBye() {
+        print("Bye");
+      }
+    }
+    ```
