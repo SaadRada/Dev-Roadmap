@@ -633,3 +633,49 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     }
   }
   ```
+
+- ### Inheritance
+
+  Inheritance in dart is defined as the process in which one class derive the properties and characteristics of another class. It is helpful as it provides an ability with which we can create a new class from an existing class
+
+  ```
+  class Mobile {
+    String screen;
+    String cpu;
+    double price;
+  }
+
+  class Samsung extends Mobile {
+    // has all Mobile Properties and can have others
+    String brand = "Samsung";
+  }
+  ```
+
+  **with constructor**
+  The child class can inherit all properties (methods, variables) and behavior of parent expect parent class constructor. & The superclass constructor can be invoke in sub class by using the super() constructor. We can access both non-parameterized and parameterized constructor of superclass.
+
+  ```
+  void main() {
+    Samsung s21 = new Samsung('samsung', 'cam', 'Dragon', '8');
+
+    print(s21.brand);
+    print(s21.camera);
+    print(s21.cpu);
+    print(s21.ram);
+  }
+
+  class Mobile {
+    late String camera;
+    late String cpu;
+    late String ram;
+
+    Mobile(this.camera, this.cpu, this.ram);
+  }
+
+  class Samsung extends Mobile {
+    late String brand;
+
+    Samsung(this.brand, camera, cpu, ram) : super(camera, cpu, ram);
+  }
+
+  ```
