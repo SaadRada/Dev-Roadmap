@@ -606,3 +606,30 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
       }
     }
     ```
+
+- ### Cascade Operator
+
+  The cascade notation (. .) in Dart allows you to make a sequence of operations on the same object (including function calls and field access). This notation helps keep Dart code compact and removes the need to create temporary variables to store data
+
+  ```
+  void main() {
+    Persone mob = new Person();
+    print(mob.mehodOme()); // method one
+    print(mob.mehodTwo()); // method two
+
+    new Person.methodOne(); // method one
+    new Person.methodTwo(); // method two
+
+    new Person..methodOne()..methodTwo(); // method one method two
+  }
+
+  class Person {
+
+    void methodOne() {
+      print('Method one');
+    }
+    void methodTwo() {
+      print('Method two');
+    }
+  }
+  ```
