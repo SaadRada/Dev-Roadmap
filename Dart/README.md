@@ -496,3 +496,55 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
 
   }
   ```
+
+- ### Reset Variables
+
+  - **Dot Notation**
+
+    ```
+    void main() {
+      Persone saad = new Persone();
+
+      Person.name = 'saad';
+    }
+    class Person {
+      Late String name;
+      late String city;
+      late int age;
+    }
+    ```
+
+  - **Cascade Operator**
+    ```
+    void main() {
+      Persone saad = new Persone()..name = 'saad'..city = 'casablanca';
+    }
+    class Person {
+      Late String name;
+      late String city;
+      late int age;
+    }
+    ```
+  - **With Constructor**
+
+    ```
+    void main() {
+      Persone saad = new Persone();
+
+      Person.name = 'saad';
+    }
+    class Person {
+      Late String name;
+      late String city;
+      late int age;
+
+      Person(name, city, age){
+        this.name = name;
+        this.city = city;
+        this.age = age;
+      } // old
+      Person(this.name, this.city, this.age); // new
+    }
+    ```
+
+- ### Getter and Setter
