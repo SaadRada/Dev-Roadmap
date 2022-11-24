@@ -765,3 +765,65 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     }
   }
   ```
+
+- ### Mixin
+
+  A mixin is a class with methods and properties utilized by other classes in Dart.
+
+  It is a way to reuse code and write code clean.
+
+  To declare a mixin, we use the mixin keyword:
+
+  ```
+  mixin Mixin_name{
+  }
+  ```
+
+  Mixins, in other words, are regular classes from which we can grab methods (or variables) without having to extend them. To accomplish this, we use the with keyword.
+
+  ```
+  // Creating a Bark mixin
+  mixin Bark {
+    void bark() => print('Barking');
+  }
+
+  mixin Fly {
+    void fly() => print('Flying');
+  }
+
+  mixin Crawl {
+    void crawl() => print('Crawling');
+  }
+  // Creating an Animal class
+  class Animal{
+    void breathe(){
+      print("Breathing");
+    }
+  }
+  // Createing a Dog class, which extends the Animal class
+  // Bark is the mixin with the method that Dog can implement
+  class Dog extends Animal with Bark {}
+
+  // Creating a Bat class Bat, which extends the Animal class
+  // Fly is the mixin with the method that Bat can implement
+  class Bat extends Animal with Fly {}
+
+  class Snake extends Animal with Crawl{
+    // Invoking the methods within the display
+    void display(){
+      print(".....Snake.....");
+      breathe();
+      crawl();
+    }
+  }
+
+  main() {
+    var dog = Dog();
+    dog.breathe();
+    dog.bark();
+
+    var snake = Snake();
+    snake.display();
+
+  }
+  ```
