@@ -548,3 +548,26 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     ```
 
 - ### Getter and Setter
+
+  Getter and setter methods are the class methods used to manipulate the data of the class fields. Getter is used to read or get the data of the class field whereas setter is used to set the data of the class field to some variable.
+
+  ```
+  void main() {
+    Person saad = new Person();
+    saad.setName = "Saad";
+    print(saad.getName);
+  }
+
+  class Person {
+    late String name;
+    late String lastName;
+
+    String get getName {
+      return this.name;
+    }
+
+    set setName(String name) {
+      this.name = name;
+    }
+  }
+  ```
