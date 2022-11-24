@@ -720,5 +720,17 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
   class Samsung extends Mobile {
 
   }
+  ```
 
+- ### Implement
+  Dart considers class definitions to be interfaces. To use an interface, classes need to use the implements keyword. It forces us to override all methods of the class it implements. Note: In Dart, we can implement as many classes as needed
+  ```
+  void main() {
+    Companies curent = Companies.AINSI;
+  }
+  enum Companies {
+    AINSI,
+    EDF,
+    FGT,
+  }
   ```
