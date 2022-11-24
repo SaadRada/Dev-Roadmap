@@ -679,3 +679,26 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
   }
 
   ```
+
+- ### Overide
+
+  Method overriding occurs in dart when a child class tries to override the parent class's method. When a child class extends a parent class, it gets full access to the methods of the parent class and thus it overrides the methods of the parent class.
+
+  ```
+  class Mobile{
+    String screen;
+
+    printScreen(this.screen) {
+      print(this.screen);
+    }
+  }
+
+  class Samsung extends Mobile {
+    String anotherScreen;
+
+    @overide // this mean that this method will be overide the class parent method
+    printScreen(this.anotherScreen) {
+      print(this.anotherScreen);
+    }
+  }
+  ```
