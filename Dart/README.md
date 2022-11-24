@@ -734,3 +734,13 @@ An Iterable is a collection of elements that can be accessed sequentially and ca
     FGT,
   }
   ```
+- ### Regular Expressions
+
+  ```
+  void main() {
+    RegExp name = new RegExp(pattern);
+    RegExp phone = new RegExp('^(?:[+0]9)?[0-9]{10}$');
+
+    print(phone.hasMatch('0700342660')); // true
+    print(phone.hasMatch('06543241')); // false
+  ```
