@@ -29,3 +29,19 @@ npm init
 ```
 npm install --save-dev electron
 ```
+
+## Run App
+
+the entry file by default is main.js
+
+```
+{
+  "scripts": {
+    "start": "electron ."
+  }
+}
+```
+
+```
+npm run start
+```
