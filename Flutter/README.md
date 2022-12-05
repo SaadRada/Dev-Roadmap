@@ -64,6 +64,10 @@ class MyApp extends StatelessWidget {
 - **stateLessWidget** : The app extends StatelessWidget, which makes the app itself a widget. In Flutter, almost everything is a widget, including alignment, padding, and layout.
 - **build** : A widget's main job is to provide a build method that describes how to display the widget in terms of other, lower-level widgets.
 
-### Stateful and stateless widgets
+## Stateful and stateless widgets
 
 A widget is either stateful or stateless. If a widget can change—when a user interacts with it, for example—it's stateful. A stateless widget never changes. Icon , IconButton , and Text are examples of stateless widgets.
+
+## UI Widgets
+
+- Fluuter Wigets Catalog https://docs.flutter.dev/development/ui/widgets
