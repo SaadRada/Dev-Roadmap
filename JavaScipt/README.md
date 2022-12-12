@@ -1060,3 +1060,19 @@ Higher Order Function is a function that accepts Functions as a parametrs
     let newP - document.querySelector("p").cloneNode(); // clone empty element with attributes
     let newP - document.querySelector("p").cloneNode(true); // clone full element with attributes and content
     ```
+  - ### AddEventListener
+
+    ```
+    let btn = document.querySelector("#btn");
+
+    btn.addEventListener("event", () => {
+      // do something
+    })
+    // event can be :
+    // - click
+    // - focus
+    // - blur
+    // - mouseEnter
+    // - mouseLeave
+    // ...
+    ```
