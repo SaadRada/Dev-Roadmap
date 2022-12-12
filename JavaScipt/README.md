@@ -23,7 +23,7 @@ javaScript is a high-level object-oriented multi-paradigm programming language D
 - [x] Functions & Scope
 - [x] Higher Order Functions And Practice
 - [x] Objects
-- Document Object Model [DOM]
+- [x] Document Object Model [DOM]
 - Browser Object Model [BOM]
 - Destructuring
 - More Methods And New Data Types
