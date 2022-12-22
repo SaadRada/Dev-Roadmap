@@ -1078,3 +1078,20 @@ Higher Order Function is a function that accepts Functions as a parametrs
     ```
 
 # BOM - Browser Object Model
+
+- ### Alert, Confirm, Prompt
+  - Alert
+    ```
+    alert('Message');
+    // stop all code before closing the alert
+    ```
+  - Confirm
+    ```
+    confirm('Are you sure you want to remove this article?');
+    // return true or false
+    ```
+  - Prompt
+    ```
+    prompt('How old are you?');
+    // give an input and confirm button
+    ```
