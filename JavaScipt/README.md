@@ -1076,3 +1076,5 @@ Higher Order Function is a function that accepts Functions as a parametrs
     // - mouseLeave
     // ...
     ```
+
+# BOM - Browser Object Model
