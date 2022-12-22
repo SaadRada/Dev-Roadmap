@@ -1080,6 +1080,7 @@ Higher Order Function is a function that accepts Functions as a parametrs
 # BOM - Browser Object Model
 
 - ### Alert, Confirm, Prompt
+
   - Alert
     ```
     alert('Message');
@@ -1095,3 +1096,25 @@ Higher Order Function is a function that accepts Functions as a parametrs
     prompt('How old are you?');
     // give an input and confirm button
     ```
+
+- ### SetTimeout and clearTimeout
+
+  - setTimeout(func, time ms, ?args...)
+  - the args is used to pass function varibales, because we can't pass them directly inside setTimeout function
+
+    ```
+    setTimeout(sayMsg, 3000);
+
+    sayMsg => console.log('Hello');
+    ```
+
+    - clearTimeout
+    - is used to stor the setTimeout before the end of the time
+
+      ```
+      let counter = setTimeout(sayHello, 3000, "Saad");
+
+      sayHello name => console.log(`Hello ${name}`);
+
+      clearTimeout(counter); // with this code we can stop the counter befor 3000ms
+      ```
