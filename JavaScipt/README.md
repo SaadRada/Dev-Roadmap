@@ -1118,3 +1118,12 @@ Higher Order Function is a function that accepts Functions as a parametrs
 
       clearTimeout(counter); // with this code we can stop the counter befor 3000ms
       ```
+
+- ### Window Location Object
+
+  - location.href : website complete curent url ex google.com/search?for=search
+  - location.host : website host ex : google.com
+  - location.reload()
+  - location.replace
+  - location.hash
+  - location.protocol : http | https
