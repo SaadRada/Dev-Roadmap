@@ -41,7 +41,8 @@ var app = new Vue({
     name: 'Rada Saad',
     isSalary: true,
     age: 21,
-    html: '<h1>Big Text</h1>'
+    html: '<h1>Big Text</h1>',
+    skills: ['Flutter', 'React', 'Laravel', 'UI Design']
   },
   methods: {
     sayHello() {
@@ -64,4 +65,15 @@ var app = new Vue({
   Updates the element’s innerHTML. Note that the contents are inserted as plain HTML - they will not be compiled as Vue templates. If you find yourself trying to compose templates using v-html, try to rethink the solution by using components instead.
   ```
   <div v-html="html"></div> // Big Text with h1 element style
+  ```
+- **v-for**
+  Render the element or template block multiple times based on the source data. The directive’s value must use the special syntax alias in expression to provide an alias for the current element being iterated on:
+  ```
+  <ul v-for="skill in skills">
+  <li>{{ skill }} </li>
+  </ul>
+  - FLutter
+  - React
+  - Laravel
+  - UI Design
   ```
