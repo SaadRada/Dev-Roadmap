@@ -42,7 +42,8 @@ var app = new Vue({
     isSalary: true,
     age: 21,
     html: '<h1>Big Text</h1>',
-    skills: ['Flutter', 'React', 'Laravel', 'UI Design']
+    skills: ['Flutter', 'React', 'Laravel', 'UI Design'],
+    experience: 1,
   },
   methods: {
     sayHello() {
@@ -55,19 +56,16 @@ var app = new Vue({
 ## Directives
 
 - **v-text**
-  Updates the element’s textContent. If you need to update the part of textContent, you should use {{ Mustache }} interpolations.
   ```
   <span v-text="msg"></span>
   <!-- same as -->
   <span>{{msg}}</span>
   ```
 - **v-html**
-  Updates the element’s innerHTML. Note that the contents are inserted as plain HTML - they will not be compiled as Vue templates. If you find yourself trying to compose templates using v-html, try to rethink the solution by using components instead.
   ```
   <div v-html="html"></div> // Big Text with h1 element style
   ```
 - **v-for**
-  Render the element or template block multiple times based on the source data. The directive’s value must use the special syntax alias in expression to provide an alias for the current element being iterated on:
   ```
   <ul v-for="skill in skills">
   <li>{{ skill }} </li>
@@ -76,4 +74,16 @@ var app = new Vue({
   - React
   - Laravel
   - UI Design
+  ```
+- **v-if v-else-if v-else**
+  ```
+  <div>
+    <p v-if="isSalary">I'm not free to work</p>
+    <p v-else="isSalary">I'm free to work</p>
+  </div>
+  <div>
+    <p v-if='experience < 0 '>No experience yet</p>
+    <p v-else-if='experience > 1'>Junior</p>
+    <p v-else>Senior</p>
+  </div>
   ```
