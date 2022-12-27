@@ -29,5 +29,39 @@ created by evan you on 2014
 - create vue project
 
   ```
-  npm create
+  vue create app-name
+  ```
+
+## Vue Instance
+
+```
+var app = new Vue({
+  el: '#app',
+  data: {
+    name: 'Rada Saad',
+    isSalary: true,
+    age: 21,
+    html: '<h1>Big Text</h1>'
+  },
+  methods: {
+    sayHello() {
+      return 'Hello'
+    }
+  }
+})
+```
+
+## Directives
+
+- **v-text**
+  Updates the element’s textContent. If you need to update the part of textContent, you should use {{ Mustache }} interpolations.
+  ```
+  <span v-text="msg"></span>
+  <!-- same as -->
+  <span>{{msg}}</span>
+  ```
+- **v-html**
+  Updates the element’s innerHTML. Note that the contents are inserted as plain HTML - they will not be compiled as Vue templates. If you find yourself trying to compose templates using v-html, try to rethink the solution by using components instead.
+  ```
+  <div v-html="html"></div> // Big Text with h1 element style
   ```
