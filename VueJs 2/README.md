@@ -44,6 +44,7 @@ var app = new Vue({
     html: '<h1>Big Text</h1>',
     skills: ['Flutter', 'React', 'Laravel', 'UI Design'],
     experience: 1,
+    img: 'https://robohash.org/176c6274964ed0188b19307ff2037beb?set=set4&bgset=&size=400x400'
   },
   methods: {
     sayHello() {
@@ -96,4 +97,14 @@ var app = new Vue({
   ```
   // change visiblity - display none or not none
   <p v-show="isSalary">my name is {{ name }}</p>
+  ```
+- **v-bind**
+  The v-bind directive is a Vuejs directive used to bind one or more attributes, or a component prop to an element. If that attribute is binded to our data defined in Vuejs instance then dynamically changes can be observed as data changes
+
+  ```
+    <img v-bind:src="img" />
+    // or
+    <img :src="img" />
+
+    // : is a shorthand for v-bind:
   ```
