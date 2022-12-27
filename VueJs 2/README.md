@@ -87,3 +87,13 @@ var app = new Vue({
     <p v-else>Senior</p>
   </div>
   ```
+- **v-once**
+  ```
+  <p>my name is {{ name }}</p>
+  // not update when the name is updated (not setState in React logic)
+  ```
+- **v-show**
+  ```
+  // change visiblity - display none or not none
+  <p v-show="isSalary">my name is {{ name }}</p>
+  ```
