@@ -103,8 +103,17 @@ var app = new Vue({
 
   ```
     <img v-bind:src="img" />
-    // or
+    // OR
     <img :src="img" />
 
     // : is a shorthand for v-bind:
+  ```
+
+- **v-on**
+  The v-on:event directive is a Vue. js directive used to add an event listener to an element.
+  ```
+  <button v-on:click="experience++">Add Experience</button>
+  // OR
+  <button @:click="experience++">Add Experience</button>
+  // @ is a shorthand for v-on:
   ```
