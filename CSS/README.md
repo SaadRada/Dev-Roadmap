@@ -434,7 +434,7 @@ p {
 - unset : inhert If able to inhert, and initial if not.
 - revert : reset the default value from user agent (Browser).
 
-# New CSS Futures
+# New CSS Features
 
 - ## :is()
 - ## :has()
